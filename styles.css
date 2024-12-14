@@ -109,6 +109,10 @@ header .navbar{
   font-weight: var(--font-weight-semibold);
 }
 
+/* .nav-logo{
+  font-size: var(--font-size-s);
+} */
+
 .navbar .nav-menu{
   display: flex;
   gap: 10px;
@@ -151,7 +155,7 @@ header .navbar{
 .hero-section .hero-details .title{
   font-size: var(--font-size-xx1);
   color: var(--secondary-color);
-  font-family: "Miniver", sans-serif;
+  font-family:  sans-serif;
 }
 
 .hero-section .hero-details .subtitle{

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <link rel="stylesheet" href="project1.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <div class="slideshow-container">
+    <img src="images/Herbal-repo/page1.png" alt="Slide 1" class="slides active">
+    <img src="images/Herbal-repo/page2.png" alt="Slide 2" class="slides">
+    <img src="images/Herbal-repo/page3.png" alt="Slide 3" class="slides">
+    <img src="images/Herbal-repo/page4.png" alt="Slide 4" class="slides">
+    <img src="images/Herbal-repo/page5.png" alt="Slide 5" class="slides">
+    
+    <div class="navigation">
+      <button class="nav-button" onclick="prevSlide()">Previous</button>
+      <button class="nav-button" onclick="nextSlide()">Next</button>
+      <a href="index.html">Go Back to Homepage</a>
+      <a href="https://www.figma.com/proto/bRMle5dT4Rbbyaw3CKvzgz/Herbal-Store-(Community)?node-id=118-32&starting-point-node-id=118%3A32&scaling=scale-down-width&content-scaling=fixed&hide-ui=1" target="_blank">View Herbal Store Prototype</a>
+    </div>
+    
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides');
+
+    function showSlide(index) {
+      slides[currentSlide].classList.remove('active'); // Hide the current slide
+      currentSlide = (index + slides.length) % slides.length; // Update current slide index
+      slides[currentSlide].classList.add('active'); // Show the new slide
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+</body>
+</html>
