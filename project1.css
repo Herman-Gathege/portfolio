@@ -1,3 +1,35 @@
+:root {
+  /* Colors */
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-grey-color: #ccc;
+
+  /* Font sizes */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-1: 1.5rem;
+  --font-size-x1: 2rem;
+  --font-size-xx1: 2.3rem;
+
+  /* Font weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 100%;
+
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+
 /* General Body Styling */
 body {
   font-family: Arial, sans-serif;
@@ -7,28 +39,28 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: var(--light-pink-color); /* Use light pink for background */
+  color: var(--dark-color); /* Use dark color for text */
   flex-direction: column;
 }
 
 /* Slideshow Container Styling */
 .slideshow-container {
   position: relative;
-  max-width: 600px; /* Container width */
+  max-width: 600px;
   margin: auto;
-  border: 2px solid #ddd; /* Light border around the slideshow */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow for rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: 2px solid var(--medium-grey-color); /* Medium grey for border */
+  border-radius: var(--border-radius-s); /* Use small border radius */
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Slide Image Styling - Reduced image size */
 .slides {
   display: none;
-  width: 90%;  /* Reduced image width to 90% */
-  margin: 0 auto; /* Center the image */
-  border-radius: 8px; /* Rounded corners for images */
+  width: 90%;
+  margin: 0 auto;
+  border-radius: var(--border-radius-s); /* Consistent rounded corners */
 }
 
 .active {
@@ -39,7 +71,7 @@ body {
 .navigation {
   text-align: center;
   margin-top: 20px;
-  font-size: 16px;
+  font-size: var(--font-size-n); /* Normal font size */
   justify-content: center;
   align-items: center;
 }
@@ -49,16 +81,18 @@ body {
   padding: 12px 25px;
   margin: 0 10px;
   border: none;
-  background-color: #007BFF;
-  color: white;
+  background-color: var(--primary-color); /* Primary color for button */
+  color: var(--white-color); /* White text on buttons */
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: var(--border-radius-s); /* Small border radius */
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05); /* Slight scaling on hover */
+  background-color: var(--secondary-color); /* Change to secondary color on hover */
+  transform: scale(1.05);
 }
 
 .nav-button:focus {
@@ -67,25 +101,25 @@ body {
 
 /* Links Styling */
 .navigation a {
-  color: #037b99;
+  color: var(--primary-color);
   text-decoration: none;
-  font-size: 12px;
+  font-size: var(--font-size-s); /* Smaller font size for links */
   margin-top: 10px;
   display: inline-block;
   transition: color 0.3s ease;
-  border-radius: rgba(45, 125, 206, 0.333);
 }
 
 .navigation a:hover {
-  color: #0a1a2b;
+  color: var(--secondary-color);
 }
 
 /* Responsive Design for Small Screens */
 @media (max-width: 768px) {
   .slideshow-container {
-    width: 90%; /* Reduce container width on smaller screens */
+    width: 90%; /* Adjust container for small screens */
   }
   .nav-button {
-    padding: 10px 20px; /* Adjust button padding on smaller screens */
+    padding: 10px 20px;
+    font-size: var(--font-size-s); /* Smaller font size for small screens */
   }
 }
