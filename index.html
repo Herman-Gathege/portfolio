@@ -54,7 +54,7 @@
           <p class="description">"With expertise in Python, Flask, JavaScript, and React, I specialize in creating seamless web applications that deliver value and functionality. From robust APIs to dynamic interfaces, I bring ideas to life with precision and passion. Let’s innovate together!"</p>
 
           <div class="buttons">
-            <a href="documents/Herman Resume.pdf" class="button order-now" target="_blank">View My Resume</a>
+            <a href="documents/Herman Updated Resume.pdf" class="button order-now" target="_blank">View My Resume</a>
             <a href="#contact" class="button contact-us">Contact Me</a> <!-- Link to Contact Section -->
           </div>
         </div>
@@ -263,12 +263,20 @@
                 <p>www.madbackcreations.com</p>
               </li>
             </ul>
-            <form action="#" class="contact-form">
+            <!-- <form action="#" class="contact-form">
               <input type="text" placeholder="Your name" class="form-input" required>
               <input type="email" placeholder="Your email" class="form-input" required>
               <textarea placeholder="Your message" class="form-input" required></textarea>
               <button class="submit-button">Submit</button>
+            </form> -->
+
+            <form action="https://formspree.io/f/xgvebglk" method="POST" class="contact-form">
+              <input type="text" name="name" placeholder="Your name" class="form-input" required>
+              <input type="email" name="email" placeholder="Your email" class="form-input" required>
+              <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+              <button type="submit" class="submit-button">Submit</button>
             </form>
+            
           </div>
         </section>
 
