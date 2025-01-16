@@ -108,6 +108,7 @@ body {
   margin-top: 10px;
   display: inline-block;
   transition: color 0.3s ease;
+  padding-left: 20px;
 }
 
 .navigation a:hover {
