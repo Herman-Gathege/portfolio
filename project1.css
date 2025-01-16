@@ -47,12 +47,13 @@ body {
 /* Slideshow Container Styling */
 .slideshow-container {
   position: relative;
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   border: 2px solid var(--medium-grey-color); /* Medium grey for border */
   border-radius: var(--border-radius-s); /* Use small border radius */
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
 }
 
 /* Slide Image Styling - Reduced image size */
