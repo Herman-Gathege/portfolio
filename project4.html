@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduLearn Project</title>
+  <link rel="stylesheet" href="project1.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <div class="slideshow-container">
+    <img src="images/edulearn/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
+    <img src="images/edulearn/slide b.png" alt="Slide 2" class="slides" loading="lazy">
+    <img src="images/edulearn/slide c.png" alt="Slide 3" class="slides" loading="lazy">
+    <img src="images/edulearn/slide d.png" alt="Slide 4" class="slides" loading="lazy">
+    <img src="images/edulearn/slide e.png" alt="Slide 5" class="slides" loading="lazy">
+    
+    
+    <div class="navigation">
+      <button class="nav-button" onclick="prevSlide()">Previous</button>
+      <button class="nav-button" onclick="nextSlide()">Next</button>
+      <a href="index.html">Go Back to Homepage</a>
+      <a href="https://edu-learn-new-1.onrender.com" target="_blank">View site</a>
+    </div>
+    
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides');
+
+    function showSlide(index) {
+      slides[currentSlide].classList.remove('active'); // Hide the current slide
+      currentSlide = (index + slides.length) % slides.length; // Update current slide index
+      slides[currentSlide].classList.add('active'); // Show the new slide
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+</body>
+</html>

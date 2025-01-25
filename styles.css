@@ -354,8 +354,16 @@ header .navbar{
   color: var(--primary-color);
 } 
 
-.gallery-section{
-  padding: 50px 0 100px;
+.gallery-section {
+  padding: 50px 0 100px 20px; /* Adds padding on the left side */
+  margin: 0 auto; /* Centers the section horizontally */
+  max-width: 1200px; /* Optional, limit the section width */
+}
+
+
+.gallery-section p{
+  margin: 10px 0;
+  color: rgb(9, 9, 121);
 }
 
 .gallery-section .gallery-list{
