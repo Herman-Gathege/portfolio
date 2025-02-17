@@ -32,67 +32,67 @@
 
 /* General Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif; /* More elegant font */
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--light-pink-color); /* Use light pink for background */
-  color: var(--dark-color); /* Use dark color for text */
+  background: var(--primary-color); /* Soft gradient */
+  color: var(--dark-color);
   flex-direction: column;
 }
 
-/* Slideshow Container Styling */
+/* Slideshow Container */
 .slideshow-container {
   position: relative;
   max-width: 800px;
-  margin: auto;
-  border: 2px solid var(--medium-grey-color); /* Medium grey for border */
-  border-radius: var(--border-radius-s); /* Use small border radius */
+  background: var(--white-color);
+  border-radius: var(--border-radius-m);
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  text-align: center;
 }
 
-/* Slide Image Styling - Reduced image size */
+/* Slide Images */
 .slides {
   display: none;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: var(--border-radius-s); /* Consistent rounded corners */
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: var(--border-radius-s);
 }
 
 .active {
   display: block;
 }
 
-/* Navigation Controls Styling */
+/* Navigation Controls */
 .navigation {
-  text-align: center;
-  margin-top: 20px;
-  font-size: var(--font-size-n); /* Normal font size */
+  display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  gap: 15px;
 }
 
-/* Button Styling */
+/* Buttons */
 .nav-button {
   padding: 12px 25px;
-  margin: 0 10px;
   border: none;
-  background-color: var(--primary-color); /* Primary color for button */
-  color: var(--white-color); /* White text on buttons */
+  background-color: var(--primary-color);
+  color: var(--white-color);
   cursor: pointer;
-  border-radius: var(--border-radius-s); /* Small border radius */
+  border-radius: var(--border-radius-m);
   font-size: var(--font-size-n);
   font-weight: var(--font-weight-medium);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-button:hover {
-  background-color: var(--secondary-color); /* Change to secondary color on hover */
+  background-color: var(--secondary-color);
   transform: scale(1.05);
 }
 
@@ -100,28 +100,123 @@ body {
   outline: none;
 }
 
-/* Links Styling */
-.navigation a {
+/* Primary Button - Solid Fill */
+.button-primary {
+  padding: 12px 25px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+/* Secondary Button - Outline */
+.button-secondary {
+  padding: 12px 25px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
   color: var(--primary-color);
-  text-decoration: none;
-  font-size: var(--font-size-s); /* Smaller font size for links */
-  margin-top: 10px;
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transform: scale(1.05);
+}
+
+/* Ghost Button - Transparent */
+.button-ghost {
+  padding: 12px 25px;
+  border: 2px solid transparent;
+  background: transparent;
+  color: var(--dark-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.button-ghost:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* Gradient Button - More Stylish */
+.button-gradient {
+  padding: 12px 25px;
+  border: none;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-gradient:hover {
+  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+  transform: scale(1.05);
+}
+
+/* Applying Buttons to Navigation */
+.navigation .nav-button {
+  margin: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .button-primary, .button-secondary, .button-ghost, .button-gradient {
+    padding: 10px 20px;
+    font-size: var(--font-size-s);
+  }
+}
+
+
+/* Links Styled Like Buttons */
+.navigation a {
   display: inline-block;
-  transition: color 0.3s ease;
-  padding-left: 20px;
+  padding: 12px 20px;
+  border-radius: var(--border-radius-m);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: var(--font-size-s);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .navigation a:hover {
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
 }
 
-/* Responsive Design for Small Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
   .slideshow-container {
-    width: 90%; /* Adjust container for small screens */
+    width: 90%;
   }
+
   .nav-button {
     padding: 10px 20px;
-    font-size: var(--font-size-s); /* Smaller font size for small screens */
+    font-size: var(--font-size-s);
+  }
+
+  .navigation a {
+    padding: 10px 15px;
+    font-size: var(--font-size-s);
   }
 }
