@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management App</title>
+  <link rel="stylesheet" href="project1.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <div class="slideshow-container">
+    <img src="images/hosiapp/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
+    <img src="images/hosiapp/slide b.png" alt="Slide 2" class="slides" loading="lazy">
+    <img src="images/hosiapp/slide c.png" alt="Slide 3" class="slides" loading="lazy">
+    <img src="images/hosiapp/slide d.png" alt="Slide 4" class="slides" loading="lazy">
+    <img src="images/hosiapp/slide e.png" alt="Slide 5" class="slides" loading="lazy">
+    
+    
+    <div class="navigation">
+      <!-- Secondary Style for Previous Button -->
+      <button class="nav-button button-secondary" onclick="prevSlide()">Previous</button>
+  
+      <!-- Primary Style for Next Button -->
+      <button class="nav-button button-primary" onclick="nextSlide()">Next</button>
+  
+      <!-- Ghost Style for Homepage Link -->
+      <a href="index.html" class="button-ghost">Go Back to Homepage</a>
+  
+      <!-- Gradient Button for View Site Link -->
+      <a href="https://hospital-manager-app.onrender.com" target="_blank" class="button-gradient">View Site</a>
+  </div>
+  
+    
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slides');
+
+    function showSlide(index) {
+      slides[currentSlide].classList.remove('active'); // Hide the current slide
+      currentSlide = (index + slides.length) % slides.length; // Update current slide index
+      slides[currentSlide].classList.add('active'); // Show the new slide
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+  </script>
+</body>
+</html>
