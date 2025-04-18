@@ -59,9 +59,8 @@
             reality</p>
 
           <div class="buttons">
-            <a href="documents/Remington H resume .pdf" class="button order-now">View My Resume</a>
-            <a href="#contact" class="button contact-us">Contact Me</a> <!-- Link to Contact Section -->
-            <a href="documents/HERMAN CERTIFICATE.pdf" class="button contact-us">View My Certificate</a> <!-- Link to Contact Section -->
+            <a href="documents/Remington H resume .pdf" class="button order-now">My Resume</a>
+            <a href="documents/HERMAN CERTIFICATE.pdf" class="button contact-us">My Certification</a>
 
           </div>
         </div>
@@ -69,6 +68,10 @@
           <img src="images/prof-pic.JPG" alt="" class="hero-image" loading="lazy">
         </div>
       </div>
+
+      <div class="shooting-stars-container"></div>
+
+
     </section>
 
     <!-- About me section -->
@@ -125,6 +128,8 @@
 
     <!-- What i can do section -->
     <section class="menu-section" id="menu">
+      <div class="stars-wrapper"></div>
+
       <h2 class="section-title">What I Do</h2>
       <div class="section-content">
         <ul class="menu-list">
@@ -304,7 +309,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="gallery-card">
           <a href="project5.html">
             <img src="images/graceful/slide a2.png" alt="Graceful Impressions" class="gallery-image" loading="lazy">
@@ -314,7 +319,7 @@
             </div>
           </a>
         </div>
-    
+
         <div class="gallery-card">
           <a href="project4.html">
             <img src="images/edulearn/slide a2.png" alt="EduLearn App" class="gallery-image" loading="lazy">
@@ -324,7 +329,7 @@
             </div>
           </a>
         </div>
-    
+
         <div class="gallery-card">
           <a href="project3.html">
             <img src="images/everyday-finds/slide a1.png" alt="E-commerce Project" class="gallery-image" loading="lazy">
@@ -334,7 +339,7 @@
             </div>
           </a>
         </div>
-    
+
         <div class="gallery-card">
           <a href="project2.html">
             <img src="images/recipe-room/slide a1.png" alt="Recipe Room App" class="gallery-image" loading="lazy">
@@ -344,7 +349,7 @@
             </div>
           </a>
         </div>
-    
+
         <div class="gallery-card">
           <a href="project1.html">
             <img src="images/herbal-repo.png" alt="Herbal Remedy App" class="gallery-image" loading="lazy">
@@ -354,10 +359,10 @@
             </div>
           </a>
         </div>
-    
+
       </div>
     </section>
-    
+
 
     <!-- Contact section -->
     <section class="contact-section" id="contact">
@@ -453,6 +458,52 @@
 
   <!-- Linking custom script -->
   <script src="script.js"></script>
+  <script>
+    const container = document.querySelector(".shooting-stars-container");
+
+    function createShootingStar() {
+      const star = document.createElement("div");
+      star.classList.add("shooting-star");
+
+      // Randomize position, delay, and size
+      star.style.left = Math.random() * 100 + "vw";
+      star.style.top = Math.random() * 100 + "vh";
+      star.style.animationDuration = (Math.random() * 1 + 1.5) + "s";
+      star.style.opacity = Math.random() * 0.8 + 0.2;
+
+      container.appendChild(star);
+
+      // Remove after animation ends
+      setTimeout(() => {
+        star.remove();
+      }, 3000);
+    }
+
+    // Create multiple stars at random intervals
+    function generateStarsRandomly() {
+      createShootingStar();
+      setTimeout(generateStarsRandomly, Math.random() * 2000 + 1000); // 1s to 3s
+    }
+
+    generateStarsRandomly();
+  </script>
+
+<script>
+  const starsWrapper = document.querySelector('.stars-wrapper');
+
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * 100 + 'vh';
+    star.style.left = Math.random() * 100 + 'vw';
+    star.style.animationDuration = (Math.random() * 2 + 2) + 's';
+    starsWrapper.appendChild(star);
+  }
+</script>
+
+
+
+
 </body>
 
 </html>

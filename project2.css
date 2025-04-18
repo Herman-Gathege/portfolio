@@ -1,0 +1,184 @@
+:root {
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-grey-color: #ccc;
+
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-1: 1.5rem;
+  --font-size-x1: 2rem;
+  --font-size-xx1: 2.3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 100%;
+
+  --site-max-width: 1300px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--primary-color);
+  color: var(--dark-color);
+  flex-direction: column;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  background: var(--white-color);
+  border-radius: var(--border-radius-s);
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: var(--border-radius-s);
+}
+
+.active {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.nav-button {
+  padding: 12px 25px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.button-primary {
+  padding: 12px 25px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.button-secondary {
+  padding: 12px 25px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transform: scale(1.05);
+}
+
+.button-ghost {
+  padding: 12px 25px;
+  border: 2px solid transparent;
+  background: transparent;
+  color: var(--dark-color);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.button-ghost:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.button-gradient {
+  padding: 12px 25px;
+  border: none;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  color: var(--white-color);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: var(--border-radius-m);
+  font-size: var(--font-size-n);
+  font-weight: var(--font-weight-medium);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button-gradient:hover {
+  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+  transform: scale(1.05);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: var(--medium-grey-color);
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .button-primary, .button-secondary, .button-ghost, .button-gradient {
+    padding: 10px 20px;
+    font-size: var(--font-size-s);
+  }
+}

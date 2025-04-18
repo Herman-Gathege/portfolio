@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EduLearn Project</title>
-  <link rel="stylesheet" href="project1.css"> <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
 </head>
+
 <body>
   <div class="slideshow-container">
     <img src="images/edulearn/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
@@ -13,48 +15,34 @@
     <img src="images/edulearn/slide c.png" alt="Slide 3" class="slides" loading="lazy">
     <img src="images/edulearn/slide d.png" alt="Slide 4" class="slides" loading="lazy">
     <img src="images/edulearn/slide e.png" alt="Slide 5" class="slides" loading="lazy">
-    
-    
-    <!-- <div class="navigation">
-      <button class="nav-button" onclick="prevSlide()">Previous</button>
-      <button class="nav-button" onclick="nextSlide()">Next</button>
-      <a href="index.html">Go Back to Homepage</a>
-      <a href="https://edu-learn-new-1.onrender.com" target="_blank">View site</a>
-    </div> -->
+
+
+   
 
     <div class="navigation">
-      <!-- Secondary Style for Previous Button -->
-      <button class="nav-button button-secondary" onclick="prevSlide()">Previous</button>
-  
-      <!-- Primary Style for Next Button -->
-      <button class="nav-button button-primary" onclick="nextSlide()">Next</button>
-  
+      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
+      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+
       <!-- Ghost Style for Homepage Link -->
-      <a href="index.html" class="button-ghost">Go Back to Homepage</a>
-  
+      <a href="index.html" class="button-ghost">Home</a>
+
       <!-- Gradient Button for View Site Link -->
       <a href="https://edu-learn-new-1.onrender.com" target="_blank" class="button-gradient">View Site</a>
+    </div>
+
+
+    <div class="dots">
+      <span class="dot" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+      <span class="dot" onclick="showSlide(3)"></span>
+      <span class="dot" onclick="showSlide(4)"></span>
+    </div>
+
   </div>
-    
-  </div>
 
-  <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slides');
+  <script src="project2.js"></script> <!-- Link to the external JS file -->
 
-    function showSlide(index) {
-      slides[currentSlide].classList.remove('active'); // Hide the current slide
-      currentSlide = (index + slides.length) % slides.length; // Update current slide index
-      slides[currentSlide].classList.add('active'); // Show the new slide
-    }
-
-    function nextSlide() {
-      showSlide(currentSlide + 1);
-    }
-
-    function prevSlide() {
-      showSlide(currentSlide - 1);
-    }
-  </script>
 </body>
+
 </html>
