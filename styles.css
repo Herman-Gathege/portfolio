@@ -185,13 +185,66 @@ header .navbar{
 }
 
 
-.hero-section {
+/* .hero-section {
   min-height: 100vh;
   background: url("images/hero2.jpeg") no-repeat center center/cover;
   padding: 20px;
   position: relative;
   color: var(--white-color);
   overflow: hidden;
+} */
+
+/* .hero-section {
+  min-height: 100vh;
+  background: url("images/hero-sec.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+  position: relative;
+  color: var(--white-color);
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.2s ease-out;
+} */
+
+.hero-section {
+  min-height: 100vh;
+  background: url("images/hero-sec.png") no-repeat center center / cover;
+  background-attachment: fixed;
+  padding: 20px;
+  position: relative;
+  color: var(--white-color);
+  overflow: hidden;
+}
+
+/* Desktop effect only */
+@media (min-width: 1024px) {
+  .hero-section {
+    background-size: 110%; /* start zoomed in */
+    transition: background-size 0.7s ease; /* smoother transition */
+  }
+
+  .hero-section.scrolled {
+    background-size: 200%; /* zoom out to normal */
+  }
+}
+
+
+
+.spaceman-container {
+  position: fixed;   /* instead of absolute */
+  inset: 0;          /* covers whole viewport */
+  pointer-events: none;
+  z-index: 10;
+}
+
+.spaceman {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+  will-change: transform;
 }
 
 
@@ -329,7 +382,7 @@ header .navbar{
 .menu-section {
   color: var(--white-color);
   background: #0e0e0e;
-  padding: 50px 0 100px;
+  padding: 50px 20px 100px;
   position: relative;
   overflow: hidden;
   z-index: 0;
@@ -581,10 +634,15 @@ header .navbar{
 
 /* Contact submit section */
 .contact-section{
-  padding: 50px 0 100px;
+  padding: 50px 60px 100px;
   background: var(--light-pink-color);
-
 }
+
+.contact-section a{
+  
+  color: #2563EB;
+}
+
 
 .contact-section .section-content {
   display: flex;
@@ -598,6 +656,7 @@ header .navbar{
   gap: 20px;
   margin: 20px 0;
   align-items: center;
+
 }
 
 .contact-section .contact-info-list .contact-info i{
