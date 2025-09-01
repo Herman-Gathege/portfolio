@@ -5,7 +5,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herman_Gathege| CodingKenya</title>
+  <meta name="description"
+    content="I’m Herman Remington (Herman Gathege), a passionate full-stack developer in Nairobi, Kenya. I create websites, apps, and digital solutions with Python, Flask, JavaScript, and React—delivering seamless user experiences and scalable products. Explore my projects and let’s build something amazing together.">
+
+  <meta name="keywords"
+    content="Herman Gathege, Herman Remington, Software Developer, Full-Stack Developer, Web Development, Python, Flask, JavaScript, React, Portfolio, Nairobi, Kenya">
+
+  <meta property="og:title" content="Herman Gathege - Full-Stack Developer Portfolio" />
+  <meta property="og:image" content="https://my-portfolio-7v1e.onrender.com/images/prof-pic.JPG" />
+  <meta property="og:description"
+    content="I’m Herman Remington (Herman Gathege), a full-stack developer from Nairobi, Kenya. I build websites, apps, and digital solutions with Python, Flask, JavaScript, and React. Explore my projects and let’s collaborate." />
+  <meta property="og:url" content="https://my-portfolio-7v1e.onrender.com/portfolio/" />
+
+  <meta name="google-site-verification" content="VdCQme8n33c040Wxdx5N1jHfjCB-mQKYqxLKYocY5mI" />
+
+  <link rel="icon" href="images/prof-pic.JPG" type="image/png">
+
+  <title>Herman Gathege | Full-Stack Developer Portfolio</title>
 
   <!-- Linking Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -14,6 +30,30 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Herman Gathege",
+  "alternateName": "Herman Remington",
+  "jobTitle": "Full-Stack Developer",
+  "url": "https://my-portfolio-7v1e.onrender.com/",
+  "image": "https://my-portfolio-7v1e.onrender.com/images/prof-pic.JPG",
+  "description": "Full-stack software developer specializing in Python, Flask, JavaScript, and React. I build scalable web apps and seamless user experiences.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Nairobi",
+    "addressCountry": "KE"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/herman-gathege",
+    "https://www.behance.net/Herman_Gathege",
+    "https://dribbble.com/SiinamTechStudio"
+  ]
+}
+</script>
+
 </head>
 
 <body>
@@ -225,76 +265,7 @@
       </div>
     </section>
 
-    <!-- My projects section -->
-
-    <!-- <section class="gallery-section" id="gallery">
-      <h2 class="section-title">My Projects</h2>
-      <div class="section-content">
-        <ul class="gallery-list">
-
-          <li class="gallery-item">
-            <div class="project-details">
-              <h3>Graceful Impressions</h3>
-              <p>Connecting art painters to art lovers</p>
-            </div>
-            <a href="project5.html">
-
-              <img src="images/graceful/slide a2.png" alt="Gallery" class="gallery-image" loading="lazy">
-            </a>
-
-          </li>
-
-          <li class="gallery-item">
-            <div class="project-details">
-              <h3>EduLearn App</h3>
-              <p>The solution for affordable learning</p>
-            </div>
-            <a href="project4.html">
-
-              <img src="images/edulearn/slide a2.png" alt="Gallery" class="gallery-image" loading="lazy">
-            </a>
-
-          </li>
-
-          <li class="gallery-item">
-            <div class="project-details">
-              <h3>E-commerce Project</h3>
-              <p>A seamless online shopping experience</p>
-            </div>
-            <a href="project3.html">
-
-              <img src="images/everyday-finds/slide a1.png" alt="Gallery" class="gallery-image" loading="lazy">
-            </a>
-
-          </li>
-
-          <li class="gallery-item">
-            <div class="project-details">
-              <h3>Recipe Room App</h3>
-              <p>Cooking has never been easier.</p>
-            </div>
-            <a href="project2.html">
-
-              <img src="images/recipe-room/slide a1.png" alt="Gallery" class="gallery-image" loading="lazy">
-            </a>
-
-          </li>
-
-          <li class="gallery-item">
-            <div class="project-details">
-              <h3>Herbal Remedy App</h3>
-              <p>Caught a cold worry not Herbal Remedy gat you.</p>
-            </div>
-            <a href="project1.html">
-
-              <img src="images/herbal-repo.png" alt="Gallery" class="gallery-image" loading="lazy">
-            </a>
-
-          </li>
-          
-        </ul>
-      </div>
-    </section> -->
+    <!-- Projects / Gallery section -->
 
     <section class="gallery-section" id="projects">
       <h2 class="section-title">My Projects</h2>
@@ -488,18 +459,18 @@
     generateStarsRandomly();
   </script>
 
-<script>
-  const starsWrapper = document.querySelector('.stars-wrapper');
+  <script>
+    const starsWrapper = document.querySelector('.stars-wrapper');
 
-  for (let i = 0; i < 100; i++) {
-    const star = document.createElement('div');
-    star.classList.add('star');
-    star.style.top = Math.random() * 100 + 'vh';
-    star.style.left = Math.random() * 100 + 'vw';
-    star.style.animationDuration = (Math.random() * 2 + 2) + 's';
-    starsWrapper.appendChild(star);
-  }
-</script>
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.animationDuration = (Math.random() * 2 + 2) + 's';
+      starsWrapper.appendChild(star);
+    }
+  </script>
 
 
 

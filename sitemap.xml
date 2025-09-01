@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Projects -->
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/project1.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/project2.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/project3.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/project4.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/project5.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://my-portfolio-7v1e.onrender.com/project6.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
