@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management App</title>
+  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+</head>
+
+<body>
+  <div class="slideshow-container">
+    <img src="images/Azani/Azani-1.png" alt="Slide 1" class="slides active" loading="lazy">
+    <img src="images/Azani/Azani-2.png" alt="Slide 2" class="slides" loading="lazy">
+    <img src="images/Azani/Azani-3.png" alt="Slide 3" class="slides" loading="lazy">
+    
+
+
+    <div class="navigation">
+      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
+      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+
+      <!-- Ghost Style for Homepage Link -->
+      <a href="index.html" class="button-ghost">Home</a>
+
+      <!-- Gradient Button for View Site Link -->
+      <a href="https://smartduka-blush.vercel.app/" target="_blank" class="button-gradient">View Site</a>
+    </div>
+
+    <div class="dots">
+      <span class="dot" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+      
+    </div>
+
+  </div>
+
+  <script src="project2.js"></script> <!-- Link to the external JS file -->
+
+</body>
+
+</html>
