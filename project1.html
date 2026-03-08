@@ -2,39 +2,161 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Herbal Remedy App</title>
-  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Herbal Remedy Finder</title>
+
+<link rel="stylesheet" href="project2.css">
+
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <img src="images/Herbal-repo/page1.png" alt="Slide 1" class="slides active" loading="lazy">
-    <img src="images/Herbal-repo/page2.png" alt="Slide 2" class="slides" loading="lazy">
-    <img src="images/Herbal-repo/page3.png" alt="Slide 3" class="slides" loading="lazy">
-    <img src="images/Herbal-repo/page4.png" alt="Slide 4" class="slides" loading="lazy">
-    <img src="images/Herbal-repo/page5.png" alt="Slide 5" class="slides" loading="lazy">
 
-    <div class="navigation">
-      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
-      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+<div class="project-container">
 
-      <a href="index.html" class="button-ghost">Home</a>
-      <a href="https://www.figma.com/proto/bRMle5dT4Rbbyaw3CKvzgz/Herbal-Store-(Community)?node-id=118-32&starting-point-node-id=118%3A32&scaling=scale-down-width&content-scaling=fixed&hide-ui=1"
-        target="_blank" class="button-gradient">View Prototype</a>
-    </div>
+<header class="project-header">
 
-    <div class="dots">
-      <span class="dot" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      <span class="dot" onclick="showSlide(3)"></span>
-      <span class="dot" onclick="showSlide(4)"></span>
-    </div>
-  </div>
+<h1>Herbal Remedy Finder</h1>
 
-  <script src="project2.js"></script> <!-- Link to the external JS file -->
+<p class="project-summary">
+A full-stack health discovery platform that helps users explore herbal remedies,
+save favorites, and share reviews through a searchable and intuitive interface.
+</p>
+
+<div class="project-actions">
+<a href="https://www.figma.com/proto/bRMle5dT4Rbbyaw3CKvzgz/Herbal-Store-(Community)?node-id=118-32&starting-point-node-id=118%3A32&scaling=scale-down-width&content-scaling=fixed&hide-ui=1"
+target="_blank" class="btn btn-live">View Prototype</a>
+<a href="https://github.com/Herman-Gathege/herbal-remedy-app" target="_blank" class="btn btn-code">GitHub</a>
+<a href="index.html" class="btn btn-back">Back</a>
+</div>
+
+</header>
+
+
+<section class="project-meta">
+
+<div class="meta-card">
+<span>Role</span>
+<strong>Fullstack Developer</strong>
+</div>
+
+<div class="meta-card">
+<span>Stack</span>
+<strong>React · Flask · PostgreSQL</strong>
+</div>
+
+<div class="meta-card">
+<span>Type</span>
+<strong>Health Discovery App</strong>
+</div>
+
+<div class="meta-card">
+<span>Tools</span>
+<strong>JWT · Postman · Bootstrap</strong>
+</div>
+
+</section>
+
+
+<section class="project-body">
+
+
+<div class="gallery-card">
+
+<div class="slideshow-container">
+
+<img src="images/Herbal-repo/page1.png" class="slides active" loading="lazy">
+<img src="images/Herbal-repo/page2.png" class="slides" loading="lazy">
+<img src="images/Herbal-repo/page3.png" class="slides" loading="lazy">
+<img src="images/Herbal-repo/page4.png" class="slides" loading="lazy">
+<img src="images/Herbal-repo/page5.png" class="slides" loading="lazy">
+
+</div>
+
+<div class="navigation">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="showSlide(0)"></span>
+<span class="dot" onclick="showSlide(1)"></span>
+<span class="dot" onclick="showSlide(2)"></span>
+<span class="dot" onclick="showSlide(3)"></span>
+<span class="dot" onclick="showSlide(4)"></span>
+</div>
+
+</div>
+
+
+<div class="info-panel">
+
+
+<div class="info-card">
+
+<h3>Problem</h3>
+
+<p>
+Many people interested in natural medicine struggle to find reliable
+information about herbal remedies and safe usage methods in one
+organized digital platform.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Solution</h3>
+
+<p>
+Herbal Remedy Finder allows users to search herbal treatments,
+read community reviews, and save favorite remedies through
+a structured and easy-to-navigate web application.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Key Features</h3>
+
+<ul>
+<li>User authentication with JWT</li>
+<li>Searchable herbal remedy database</li>
+<li>User reviews and ratings</li>
+<li>Favorites system for saved remedies</li>
+<li>Responsive interface optimized for all devices</li>
+</ul>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Implementation</h3>
+
+<ul>
+<li>React frontend for interactive UI</li>
+<li>Flask REST API backend</li>
+<li>PostgreSQL database for remedies and user data</li>
+<li>CRUD operations for remedies and reviews</li>
+<li>API testing performed with Postman</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+</div>
+
+<script src="project.js"></script>
+
 </body>
 
 </html>

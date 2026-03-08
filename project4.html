@@ -2,46 +2,158 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduLearn Project</title>
-  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EduLearn Platform</title>
+
+<link rel="stylesheet" href="project2.css">
+
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <img src="images/edulearn/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
-    <img src="images/edulearn/slide b.png" alt="Slide 2" class="slides" loading="lazy">
-    <img src="images/edulearn/slide c.png" alt="Slide 3" class="slides" loading="lazy">
-    <img src="images/edulearn/slide d.png" alt="Slide 4" class="slides" loading="lazy">
-    <img src="images/edulearn/slide e.png" alt="Slide 5" class="slides" loading="lazy">
+
+<div class="project-container">
+
+<header class="project-header">
+
+<h1>EduLearn Platform</h1>
+
+<p class="project-summary">
+A full-stack education platform that allows users to discover courses,
+leave reviews, and manage learning progress through a secure and
+responsive web interface.
+</p>
+
+<div class="project-actions">
+<a href="https://edu-learn-new-1.onrender.com" target="_blank" class="btn btn-live">Live Demo</a>
+<a href="https://github.com/Herman-Gathege/Edu-Learn-new" target="_blank" class="btn btn-code">GitHub</a>
+<a href="index.html" class="btn btn-back">Back</a>
+</div>
+
+</header>
 
 
-   
+<section class="project-meta">
 
-    <div class="navigation">
-      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
-      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+<div class="meta-card">
+<span>Role</span>
+<strong>Fullstack Developer</strong>
+</div>
 
-      <!-- Ghost Style for Homepage Link -->
-      <a href="index.html" class="button-ghost">Home</a>
+<div class="meta-card">
+<span>Stack</span>
+<strong>React · Flask · PostgreSQL</strong>
+</div>
 
-      <!-- Gradient Button for View Site Link -->
-      <a href="https://edu-learn-new-1.onrender.com" target="_blank" class="button-gradient">View Site</a>
-    </div>
+<div class="meta-card">
+<span>Type</span>
+<strong>Education Platform</strong>
+</div>
+
+<div class="meta-card">
+<span>Tools</span>
+<strong>JWT · Postman · Bootstrap</strong>
+</div>
+
+</section>
 
 
-    <div class="dots">
-      <span class="dot" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      <span class="dot" onclick="showSlide(3)"></span>
-      <span class="dot" onclick="showSlide(4)"></span>
-    </div>
+<section class="project-body">
 
-  </div>
 
-  <script src="project2.js"></script> <!-- Link to the external JS file -->
+<div class="gallery-card">
+
+<div class="slideshow-container">
+
+<img src="images/edulearn/slide a.png" class="slides active" loading="lazy">
+<img src="images/edulearn/slide b.png" class="slides" loading="lazy">
+<img src="images/edulearn/slide c.png" class="slides" loading="lazy">
+<img src="images/edulearn/slide d.png" class="slides" loading="lazy">
+<img src="images/edulearn/slide e.png" class="slides" loading="lazy">
+
+</div>
+
+<div class="navigation">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="showSlide(0)"></span>
+<span class="dot" onclick="showSlide(1)"></span>
+<span class="dot" onclick="showSlide(2)"></span>
+<span class="dot" onclick="showSlide(3)"></span>
+<span class="dot" onclick="showSlide(4)"></span>
+</div>
+
+</div>
+
+
+<div class="info-panel">
+
+<div class="info-card">
+
+<h3>Problem</h3>
+
+<p>
+Students often struggle to find well-organized platforms that allow
+them to browse courses, evaluate reviews, and manage learning
+content in a single unified environment.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Solution</h3>
+
+<p>
+EduLearn provides a structured platform where users can explore
+courses, leave reviews, and securely manage their accounts while
+discovering educational content tailored to their interests.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Key Features</h3>
+
+<ul>
+<li>Secure JWT authentication system</li>
+<li>Course discovery with search and filtering</li>
+<li>User reviews and ratings</li>
+<li>Responsive course browsing interface</li>
+<li>Dynamic course listings powered by APIs</li>
+</ul>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Implementation</h3>
+
+<ul>
+<li>React frontend with Bootstrap UI components</li>
+<li>Flask backend REST API</li>
+<li>PostgreSQL database for structured course data</li>
+<li>Postman used for API testing and validation</li>
+<li>Optimized UI for desktop and mobile users</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="project.js"></script>
 
 </body>
 

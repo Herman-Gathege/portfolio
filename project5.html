@@ -2,43 +2,166 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graceful Impressions</title>
-  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Graceful Impressions</title>
+
+<link rel="stylesheet" href="project2.css">
+
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <img src="images/graceful/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
-    <img src="images/graceful/slide b.png" alt="Slide 2" class="slides" loading="lazy">
-    <img src="images/graceful/slide c.png" alt="Slide 3" class="slides" loading="lazy">
-    <img src="images/graceful/slide d.png" alt="Slide 4" class="slides" loading="lazy">
-    <img src="images/graceful/slide e.png" alt="Slide 5" class="slides" loading="lazy">
+
+<div class="project-container">
+
+<!-- HEADER -->
+<header class="project-header">
+
+<h1>Graceful Impressions</h1>
+
+<p class="project-summary">
+A full-stack digital marketplace designed to connect Kenyan visual artists
+with global art enthusiasts, helping painters showcase their work,
+build audiences and increase potential art sales online.
+</p>
+
+<div class="project-actions">
+<a href="https://graceful-impressions.onrender.com" target="_blank" class="btn btn-live">Live Demo</a>
+<a href="https://github.com/Herman-Gathege/graceful-Impressions-clean" target="_blank" class="btn btn-code">GitHub</a>
+<a href="index.html" class="btn btn-back">Back</a>
+</div>
+
+</header>
 
 
-    <div class="navigation">
-      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
-      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+<!-- PROJECT META -->
+<section class="project-meta">
 
-      <!-- Ghost Style for Homepage Link -->
-      <a href="index.html" class="button-ghost">Home</a>
+<div class="meta-card">
+<span>Role</span>
+<strong>Fullstack Developer</strong>
+</div>
 
-      <!-- Gradient Button for View Site Link -->
-      <a href="https://graceful-impressions.onrender.com" target="_blank" class="button-gradient">View Site</a>
-    </div>
+<div class="meta-card">
+<span>Stack</span>
+<strong>React · Flask · PostgreSQL</strong>
+</div>
 
-    <div class="dots">
-      <span class="dot" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      <span class="dot" onclick="showSlide(3)"></span>
-      <span class="dot" onclick="showSlide(4)"></span>
-    </div>
+<div class="meta-card">
+<span>Type</span>
+<strong>Art Marketplace Platform</strong>
+</div>
 
-  </div>
+<div class="meta-card">
+<span>Tools</span>
+<strong>Supabase · Bootstrap · Figma</strong>
+</div>
 
-  <script src="project2.js"></script> <!-- Link to the external JS file -->
+</section>
+
+
+<!-- MAIN BODY -->
+<section class="project-body">
+
+
+<!-- LEFT SIDE : SCREENSHOTS -->
+<div class="gallery-card">
+
+<div class="slideshow-container">
+
+<img src="images/graceful/slide a.png" class="slides active" loading="lazy">
+<img src="images/graceful/slide b.png" class="slides" loading="lazy">
+<img src="images/graceful/slide c.png" class="slides" loading="lazy">
+<img src="images/graceful/slide d.png" class="slides" loading="lazy">
+<img src="images/graceful/slide e.png" class="slides" loading="lazy">
+
+</div>
+
+<div class="navigation">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="showSlide(0)"></span>
+<span class="dot" onclick="showSlide(1)"></span>
+<span class="dot" onclick="showSlide(2)"></span>
+<span class="dot" onclick="showSlide(3)"></span>
+<span class="dot" onclick="showSlide(4)"></span>
+</div>
+
+</div>
+
+
+<!-- RIGHT SIDE : PROJECT INFO -->
+<div class="info-panel">
+
+
+<div class="info-card">
+
+<h3>Problem</h3>
+
+<p>
+Many talented artists struggle to reach wider audiences and
+monetize their artwork because they lack accessible digital
+platforms to showcase their work and manage their artistic presence.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Solution</h3>
+
+<p>
+Graceful Impressions provides a digital platform where artists
+can create profiles, upload artwork, promote events and connect
+with art lovers globally through an accessible online gallery
+experience.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Key Features</h3>
+
+<ul>
+<li>Artist profile management</li>
+<li>Artwork uploads and digital gallery</li>
+<li>User registration and authentication</li>
+<li>Event and exhibition management</li>
+<li>Responsive cross-device browsing experience</li>
+</ul>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Implementation</h3>
+
+<ul>
+<li>Frontend built with React for responsive UI</li>
+<li>Flask REST APIs for backend services</li>
+<li>PostgreSQL database hosted on Supabase</li>
+<li>Secure authentication system for artists and users</li>
+<li>Deployed using Render for full-stack hosting</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+</div>
+
+<script src="project.js"></script>
 
 </body>
 

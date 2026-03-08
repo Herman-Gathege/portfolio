@@ -2,44 +2,160 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-commerce project</title>
-  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Everyday Finds Store</title>
+
+<link rel="stylesheet" href="project2.css">
+
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <img src="images/everyday-finds/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
-    <img src="images/everyday-finds/slide b.png" alt="Slide 2" class="slides" loading="lazy">
-    <img src="images/everyday-finds/slide c.png" alt="Slide 3" class="slides" loading="lazy">
-    <img src="images/everyday-finds/slide d.png" alt="Slide 4" class="slides" loading="lazy">
-    <img src="images/everyday-finds/slide e.png" alt="Slide 5" class="slides" loading="lazy">
+
+<div class="project-container">
+
+<header class="project-header">
+
+<h1>Everyday Finds Store</h1>
+
+<p class="project-summary">
+A full-stack e-commerce platform that enables users to browse products,
+add items to their cart, and complete secure purchases while allowing
+administrators to manage products and track store performance.
+</p>
+
+<div class="project-actions">
+<a href="https://e-commerce-template-63p3.onrender.com/" target="_blank" class="btn btn-live">Live Demo</a>
+<a href="https://github.com/Herman-Gathege/e-commerce-template" target="_blank" class="btn btn-code">GitHub</a>
+<a href="index.html" class="btn btn-back">Back</a>
+</div>
+
+</header>
 
 
+<section class="project-meta">
 
-    <div class="navigation">
-      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
-      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+<div class="meta-card">
+<span>Role</span>
+<strong>Fullstack Developer</strong>
+</div>
 
-      <!-- Ghost Style for Homepage Link -->
-      <a href="index.html" class="button-ghost">Home</a>
+<div class="meta-card">
+<span>Stack</span>
+<strong>React · Node.js · Express · MongoDB</strong>
+</div>
 
-      <!-- Gradient Button for View Site Link -->
-      <a href="https://e-commerce-template-63p3.onrender.com/" target="_blank" class="button-gradient">View Site</a>
-    </div>
+<div class="meta-card">
+<span>Type</span>
+<strong>E-commerce Platform</strong>
+</div>
 
-    <div class="dots">
-      <span class="dot" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      <span class="dot" onclick="showSlide(3)"></span>
-      <span class="dot" onclick="showSlide(4)"></span>
-    </div>
+<div class="meta-card">
+<span>Tools</span>
+<strong>Stripe · Cloudinary</strong>
+</div>
 
-  </div>
+</section>
 
-  <script src="project2.js"></script> <!-- Link to the external JS file -->
+
+<section class="project-body">
+
+
+<div class="gallery-card">
+
+<div class="slideshow-container">
+
+<img src="images/everyday-finds/slide a.png" class="slides active" loading="lazy">
+<img src="images/everyday-finds/slide b.png" class="slides" loading="lazy">
+<img src="images/everyday-finds/slide c.png" class="slides" loading="lazy">
+<img src="images/everyday-finds/slide d.png" class="slides" loading="lazy">
+<img src="images/everyday-finds/slide e.png" class="slides" loading="lazy">
+
+</div>
+
+<div class="navigation">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="showSlide(0)"></span>
+<span class="dot" onclick="showSlide(1)"></span>
+<span class="dot" onclick="showSlide(2)"></span>
+<span class="dot" onclick="showSlide(3)"></span>
+<span class="dot" onclick="showSlide(4)"></span>
+</div>
+
+</div>
+
+
+<div class="info-panel">
+
+
+<div class="info-card">
+
+<h3>Problem</h3>
+
+<p>
+Many small online stores lack scalable systems that support product
+management, secure payments, and meaningful analytics for
+understanding store performance.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Solution</h3>
+
+<p>
+Everyday Finds delivers a modern e-commerce experience with
+product browsing, secure checkout, and an admin dashboard
+for managing inventory and monitoring store analytics.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Key Features</h3>
+
+<ul>
+<li>User authentication and authorization</li>
+<li>Shopping cart and product management</li>
+<li>Stripe payment integration</li>
+<li>Cloudinary image hosting</li>
+<li>Admin dashboard with sales analytics</li>
+</ul>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Implementation</h3>
+
+<ul>
+<li>React frontend for dynamic user experience</li>
+<li>Node.js and Express backend APIs</li>
+<li>MongoDB database for flexible product data</li>
+<li>Stripe used for payment processing</li>
+<li>Optimized APIs for cart and product operations</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+</div>
+
+<script src="project.js"></script>
 
 </body>
 

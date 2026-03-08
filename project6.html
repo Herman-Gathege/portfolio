@@ -2,43 +2,147 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hospital Management App</title>
-  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hospital Management System</title>
+
+<link rel="stylesheet" href="project2.css">
+
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <img src="images/hosiapp/slide a.png" alt="Slide 1" class="slides active" loading="lazy">
-    <img src="images/hosiapp/slide b.png" alt="Slide 2" class="slides" loading="lazy">
-    <img src="images/hosiapp/slide c.png" alt="Slide 3" class="slides" loading="lazy">
-    <img src="images/hosiapp/slide d.png" alt="Slide 4" class="slides" loading="lazy">
-    <img src="images/hosiapp/slide e.png" alt="Slide 5" class="slides" loading="lazy">
+
+<div class="project-container">
+
+<!-- HEADER -->
+<header class="project-header">
+
+<h1>Hospital Management System</h1>
+
+<p class="project-summary">
+A full-stack healthcare dashboard designed to manage patients,
+appointments, billing and hospital inventory operations through
+a centralized digital system.
+</p>
+
+<div class="project-actions">
+<a href="https://hospital-manager-app.onrender.com" target="_blank" class="btn btn-live">Live Demo</a>
+<a href="https://github.com/Herman-Gathege/Hospital-Manager-App" target="_blank" class="btn btn-code">GitHub</a>
+<a href="index.html" class="btn btn-back">Back</a>
+</div>
+
+</header>
 
 
-    <div class="navigation">
-      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
-      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+<!-- META INFO -->
+<section class="project-meta">
 
-      <!-- Ghost Style for Homepage Link -->
-      <a href="index.html" class="button-ghost">Home</a>
+<div class="meta-card">
+<span>Role</span>
+<strong>Fullstack Developer</strong>
+</div>
 
-      <!-- Gradient Button for View Site Link -->
-      <a href="https://hospital-manager-app.onrender.com" target="_blank" class="button-gradient">View Site</a>
-    </div>
+<div class="meta-card">
+<span>Stack</span>
+<strong>React · Flask · PostgreSQL</strong>
+</div>
 
-    <div class="dots">
-      <span class="dot" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      <span class="dot" onclick="showSlide(3)"></span>
-      <span class="dot" onclick="showSlide(4)"></span>
-    </div>
+<div class="meta-card">
+<span>Type</span>
+<strong>Healthcare Dashboard</strong>
+</div>
 
-  </div>
+<div class="meta-card">
+<span>Tools</span>
+<strong>Supabase · Figma</strong>
+</div>
 
-  <script src="project2.js"></script> <!-- Link to the external JS file -->
+</section>
+
+
+<!-- MAIN BODY -->
+<section class="project-body">
+
+<!-- LEFT: SCREENSHOTS -->
+<div class="gallery-card">
+
+<div class="slideshow-container">
+
+<img src="images/hosiapp/slide a.png" class="slides active" loading="lazy">
+<img src="images/hosiapp/slide b.png" class="slides" loading="lazy">
+<img src="images/hosiapp/slide c.png" class="slides" loading="lazy">
+<img src="images/hosiapp/slide d.png" class="slides" loading="lazy">
+<img src="images/hosiapp/slide e.png" class="slides" loading="lazy">
+
+</div>
+
+<div class="navigation">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="showSlide(0)"></span>
+<span class="dot" onclick="showSlide(1)"></span>
+<span class="dot" onclick="showSlide(2)"></span>
+<span class="dot" onclick="showSlide(3)"></span>
+<span class="dot" onclick="showSlide(4)"></span>
+</div>
+
+</div>
+
+
+<!-- RIGHT: PROJECT DETAILS -->
+<div class="info-panel">
+
+<div class="info-card">
+
+<h3>Problem</h3>
+
+<p>
+Many small and mid-size healthcare facilities rely on fragmented systems
+or manual paperwork to track patient records, appointments and billing,
+which leads to inefficiencies and data management challenges.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Solution</h3>
+
+<p>
+A centralized hospital management platform that digitizes patient records,
+appointment scheduling, billing operations and inventory tracking
+within a secure role-based system.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Key Features</h3>
+
+<ul>
+<li>Patient record management</li>
+<li>Appointment scheduling system</li>
+<li>Secure role-based authentication</li>
+<li>Billing and revenue analytics dashboard</li>
+<li>Medical inventory management</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="project.js"></script>
 
 </body>
 

@@ -2,50 +2,164 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Room</title>
-  <link rel="stylesheet" href="project2.css"> <!-- Link to the external CSS file -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recipe Room</title>
+
+<link rel="stylesheet" href="project2.css">
+
 </head>
 
 <body>
-  <div class="slideshow-container">
-    <img src="images/recipe-room/slide 1.png" alt="Slide 1" class="slides active" loading="lazy">
-    <img src="images/recipe-room/slide 2.png" alt="Slide 2" class="slides" loading="lazy">
-    <img src="images/recipe-room/slide 3.png" alt="Slide 3" class="slides" loading="lazy">
-    <img src="images/recipe-room/slide 4.png" alt="Slide 4" class="slides" loading="lazy">
-    <img src="images/recipe-room/slide 5.png" alt="Slide 5" class="slides" loading="lazy">
-    <img src="images/recipe-room/slide 6.png" alt="Slide 6" class="slides" loading="lazy">
-    <img src="images/recipe-room/slide 7.png" alt="Slide 7" class="slides" loading="lazy">
+
+<div class="project-container">
+
+<header class="project-header">
+
+<h1>Recipe Room</h1>
+
+<p class="project-summary">
+A modern recipe discovery platform designed to help users explore
+recipes, browse cooking inspiration, and discover new meals through
+a visually engaging and user-friendly interface.
+</p>
+
+<div class="project-actions">
+<a href="https://www.figma.com/proto/3ztI6BhJ8W9FgMOqJ1m4vb/recipe-website?node-id=1-2&starting-point-node-id=1%3A2"
+target="_blank" class="btn btn-live">View Prototype</a>
+<!-- <a href="#" class="btn btn-code">GitHub</a> -->
+<a href="index.html" class="btn btn-back">Back</a>
+</div>
+
+</header>
 
 
+<section class="project-meta">
 
-    <div class="navigation">
-      <button class="nav-button button-secondary" onclick="prevSlide()">← Previous</button>
-      <button class="nav-button button-primary" onclick="nextSlide()">Next →</button>
+<div class="meta-card">
+<span>Role</span>
+<strong>UI/UX Designer</strong>
+</div>
 
-      <!-- Ghost Style for Homepage Link -->
-      <a href="index.html" class="button-ghost">Home</a>
+<div class="meta-card">
+<span>Stack</span>
+<strong>Figma · UX Design</strong>
+</div>
 
-      <!-- Gradient Button for View Site Link -->
-      <a href="https://www.figma.com/proto/3ztI6BhJ8W9FgMOqJ1m4vb/recipe-website?node-id=1-2&starting-point-node-id=1%3A2"
-        target="_blank" class="button-gradient">View Prototype</a>
-    </div>
+<div class="meta-card">
+<span>Type</span>
+<strong>Recipe Discovery Platform</strong>
+</div>
 
-    <div class="dots">
-      <span class="dot" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      <span class="dot" onclick="showSlide(3)"></span>
-      <span class="dot" onclick="showSlide(4)"></span>
-      <span class="dot" onclick="showSlide(5)"></span>
-      <span class="dot" onclick="showSlide(6)"></span>
+<div class="meta-card">
+<span>Tools</span>
+<strong>Figma Prototyping</strong>
+</div>
 
-    </div>
+</section>
 
-  </div>
 
-  <script src="project2.js"></script>
+<section class="project-body">
+
+
+<div class="gallery-card">
+
+<div class="slideshow-container">
+
+<img src="images/recipe-room/slide 1.png" class="slides active" loading="lazy">
+<img src="images/recipe-room/slide 2.png" class="slides" loading="lazy">
+<img src="images/recipe-room/slide 3.png" class="slides" loading="lazy">
+<img src="images/recipe-room/slide 4.png" class="slides" loading="lazy">
+<img src="images/recipe-room/slide 5.png" class="slides" loading="lazy">
+<img src="images/recipe-room/slide 6.png" class="slides" loading="lazy">
+<img src="images/recipe-room/slide 7.png" class="slides" loading="lazy">
+
+</div>
+
+<div class="navigation">
+<button onclick="prevSlide()">← Previous</button>
+<button onclick="nextSlide()">Next →</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="showSlide(0)"></span>
+<span class="dot" onclick="showSlide(1)"></span>
+<span class="dot" onclick="showSlide(2)"></span>
+<span class="dot" onclick="showSlide(3)"></span>
+<span class="dot" onclick="showSlide(4)"></span>
+<span class="dot" onclick="showSlide(5)"></span>
+<span class="dot" onclick="showSlide(6)"></span>
+</div>
+
+</div>
+
+
+<div class="info-panel">
+
+
+<div class="info-card">
+
+<h3>Problem</h3>
+
+<p>
+Many recipe websites overwhelm users with cluttered interfaces
+and poor navigation, making it difficult to discover meals
+or explore cooking inspiration.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Solution</h3>
+
+<p>
+Recipe Room introduces a visually structured and intuitive
+recipe discovery interface designed to simplify meal exploration
+and encourage users to try new dishes.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Key Features</h3>
+
+<ul>
+<li>Clean and visually engaging recipe browsing</li>
+<li>Category-based recipe discovery</li>
+<li>Mobile-first user experience design</li>
+<li>Interactive prototype for usability testing</li>
+</ul>
+
+</div>
+
+
+<div class="info-card">
+
+<h3>Implementation</h3>
+
+<ul>
+<li>Designed entirely in Figma</li>
+<li>Wireframes and high-fidelity UI screens</li>
+<li>User-centered layout and navigation design</li>
+<li>Interactive prototype for user flow simulation</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+
+</div>
+
+<script src="project.js"></script>
+
 </body>
 
 </html>
