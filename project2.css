@@ -238,16 +238,36 @@ transition:0.2s;
 .btn-live{
 background: var(--primary-color);
 color:white;
+padding:8px 16px;
+border-radius:20px;
+display:inline-block;
+font-size:.9rem;
+font-weight:600;
+transition:.2s;
 }
 
 .btn-code{
 background:var(--secondary-color);
 color:white;
+padding:8px 16px;
+border-radius:20px;
+display:inline-block;
+font-size:.9rem;
+font-weight:600;
+transition:.2s;
+
 }
 
 .btn-back{
 border:1px solid #ccc;
 color:#333;
+padding:8px 16px;
+border-radius:20px;
+display:inline-block;
+font-size:.9rem;
+font-weight:600;
+transition:.2s;
+
 }
 
 .btn:hover{
@@ -334,6 +354,11 @@ background:#2563eb;
 color:white;
 border-radius:6px;
 cursor:pointer;
+border-radius:20px;
+display:inline-block;
+font-size:.9rem;
+font-weight:600;
+transition:.2s;
 }
 
 
