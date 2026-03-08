@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   /* background: var(--primary-color);
   color: var(--dark-color); */
   flex-direction: column;
@@ -38,7 +38,7 @@ body {
   margin:0;
   background:#f4f6fb;
   color:#111;
-  padding-top: 300px;
+  /* padding-top: 300px; */
   
 }
 
