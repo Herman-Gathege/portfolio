@@ -7,17 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#07080d">
   <meta name="description"
-    content="Everyday Finds Store — a full-stack e-commerce platform that enables users to browse products, complete secure purchases and allows administrators to manage products and track store performance.">
-  <meta property="og:title" content="Everyday Finds Store | Case study" />
+    content="Notification Pipeline System — centralised notification infrastructure built with FastAPI, PostgreSQL, Redis, Celery and Docker, with provider abstraction, retries, delivery logging and Prometheus monitoring.">
+  <meta property="og:title" content="Notification Pipeline System | Case study" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://my-portfolio-7v1e.onrender.com/project3.html" />
+  <meta property="og:url" content="https://my-portfolio-7v1e.onrender.com/project9.html" />
   <meta property="og:image" content="https://my-portfolio-7v1e.onrender.com/images/opt/og-card.jpg" />
-  <meta property="og:description" content="A full-stack e-commerce platform with Stripe checkout, product management, Cloudinary image hosting and admin analytics — React, Node.js and MongoDB." />
+  <meta property="og:description" content="Centralised notification infrastructure built with FastAPI, Celery, Redis and Docker — provider abstraction, retries, delivery logs and Prometheus monitoring." />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="images/opt/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="images/opt/apple-touch-icon.png">
-  <title>Everyday Finds Store | Case study</title>
+  <title>Notification Pipeline System | Case study</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,28 +80,23 @@
       <ol>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><span aria-current="page">Everyday Finds Store</span></li>
+        <li><span aria-current="page">Notification Pipeline System</span></li>
       </ol>
     </nav>
 
     <header class="project-header">
-      <p class="eyebrow" data-reveal>Case study</p>
-      <h1 data-reveal style="--reveal-delay: 60ms">Everyday Finds Store</h1>
+      <p class="eyebrow" data-reveal>Case study · Backend infrastructure</p>
+      <h1 data-reveal style="--reveal-delay: 60ms">Notification Pipeline System</h1>
       <p class="project-summary" data-reveal style="--reveal-delay: 100ms">
-        A full-stack e-commerce platform that enables users to browse products,
-        add items to their cart, and complete secure purchases while allowing
-        administrators to manage products and track store performance.
+        Centralised notification infrastructure that receives application events and delivers them
+        through multiple communication providers — with API-key authentication, asynchronous
+        processing, delivery tracking and monitoring built in.
       </p>
 
       <div class="project-actions" data-reveal style="--reveal-delay: 140ms">
-        <a class="btn btn--primary" href="https://e-commerce-template-63p3.onrender.com/" target="_blank"
-          rel="noopener">
-          Live Demo
-          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-        </a>
-        <a class="btn btn--glass" href="https://github.com/Herman-Gathege/e-commerce-template" target="_blank"
-          rel="noopener">
-          GitHub
+        <a class="btn btn--primary" href="https://github.com/Herman-Gathege/notifications_pipeline_system"
+          target="_blank" rel="noopener">
+          View Source
           <i class="fa-brands fa-github" aria-hidden="true"></i>
         </a>
         <a class="btn btn--ghost" href="projects.html">
@@ -114,99 +109,95 @@
     <section class="project-meta" aria-label="Project details">
       <div class="meta-card glass glass--card" data-reveal>
         <span>Role</span>
-        <strong>Fullstack Developer</strong>
+        <strong>Backend &amp; Infrastructure Developer</strong>
       </div>
 
       <div class="meta-card glass glass--card" data-reveal style="--reveal-delay: 60ms">
         <span>Stack</span>
-        <strong>React · Node.js · Express · MongoDB</strong>
+        <strong>FastAPI · PostgreSQL · Redis · Celery · Docker</strong>
       </div>
 
       <div class="meta-card glass glass--card" data-reveal style="--reveal-delay: 120ms">
         <span>Type</span>
-        <strong>E-commerce Platform</strong>
+        <strong>Notification infrastructure platform</strong>
       </div>
 
       <div class="meta-card glass glass--card" data-reveal style="--reveal-delay: 180ms">
-        <span>Tools</span>
-        <strong>Stripe · Cloudinary</strong>
+        <span>Architecture</span>
+        <strong>Event-driven API + async workers + provider abstraction</strong>
       </div>
     </section>
 
-    <section class="project-body">
-      <div class="gallery glass glass--pane" data-gallery aria-roledescription="carousel"
-        aria-label="Everyday Finds Store screenshots" tabindex="0" data-reveal>
-        <div class="slideshow">
-          <img class="slide is-active" src="images/opt/everyday-a.webp" alt="Everyday Finds Store case study cover"
-            width="1600" height="1170" decoding="async">
-          <img class="slide" src="images/opt/everyday-b.webp" alt="Everyday Finds Store screen 2 of 5" width="1600"
-            height="1170" loading="lazy" decoding="async">
-          <img class="slide" src="images/opt/everyday-c.webp" alt="Everyday Finds Store screen 3 of 5" width="1600"
-            height="1170" loading="lazy" decoding="async">
-          <img class="slide" src="images/opt/everyday-d.webp" alt="Everyday Finds Store screen 4 of 5" width="1600"
-            height="1170" loading="lazy" decoding="async">
-          <img class="slide" src="images/opt/everyday-e.webp" alt="Everyday Finds Store screen 5 of 5" width="1600"
-            height="1170" loading="lazy" decoding="async">
-        </div>
-
-        <div class="slideshow__controls">
-          <button class="slideshow__button glass glass--float" type="button" data-slide-prev
-            aria-label="Previous screenshot">
-            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-          </button>
-          <div class="slideshow__dots">
-            <button class="dot is-active" type="button" aria-label="Show screenshot 1"></button>
-            <button class="dot" type="button" aria-label="Show screenshot 2"></button>
-            <button class="dot" type="button" aria-label="Show screenshot 3"></button>
-            <button class="dot" type="button" aria-label="Show screenshot 4"></button>
-            <button class="dot" type="button" aria-label="Show screenshot 5"></button>
-          </div>
-          <span class="slideshow__counter" aria-live="polite">1 / 5</span>
-          <button class="slideshow__button glass glass--float" type="button" data-slide-next
-            aria-label="Next screenshot">
-            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-
+    <section class="project-body project-body--single">
       <div class="info-panel">
         <div class="info-card glass glass--card" data-reveal>
-          <h2>Problem</h2>
+          <h2>Why it exists</h2>
           <p>
-            Many small online stores lack scalable systems that support product
-            management, secure payments, and meaningful analytics for
-            understanding store performance.
+            Notification logic tends to spread: provider-specific code ends up inside every
+            application that needs to send an email, SMS or WhatsApp message. That makes delivery
+            hard to retry, hard to audit and expensive to change when a provider is swapped.
+            This service pulls all of that into one place.
           </p>
         </div>
 
         <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 60ms">
           <h2>Solution</h2>
           <p>
-            Everyday Finds delivers a modern e-commerce experience with
-            product browsing, secure checkout, and an admin dashboard
-            for managing inventory and monitoring store analytics.
+            Applications publish events to a single platform. The platform resolves the right
+            provider, delivers asynchronously and records what happened — separating API requests,
+            worker processing, persistence and provider integrations into distinct parts of the
+            system.
           </p>
         </div>
 
         <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 120ms">
-          <h2>Key Features</h2>
+          <h2>Key features</h2>
           <ul>
-            <li>User authentication and authorization</li>
-            <li>Shopping cart and product management</li>
-            <li>Stripe payment integration</li>
-            <li>Cloudinary image hosting</li>
-            <li>Admin dashboard with sales analytics</li>
+            <li>REST APIs for applications, API keys, events, notifications, templates, providers,
+              monitoring and reporting</li>
+            <li>Provider abstraction supporting email, SMS, SMTP, WhatsApp and Resend</li>
+            <li>API-key authentication, request identification and protected service-to-service routes</li>
+            <li>Notification lifecycle tracking: delivery attempts, delivery logs, retries and
+              provider resolution</li>
+            <li>Templates and event payloads kept separate from provider implementation details</li>
           </ul>
         </div>
 
         <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 180ms">
           <h2>Implementation</h2>
           <ul>
-            <li>React frontend for dynamic user experience</li>
-            <li>Node.js and Express backend APIs</li>
-            <li>MongoDB database for flexible product data</li>
-            <li>Stripe used for payment processing</li>
-            <li>Optimized APIs for cart and product operations</li>
+            <li>FastAPI service with SQLAlchemy models and Alembic-managed schema evolution</li>
+            <li>Event-driven asynchronous processing with Redis and Celery, so notification workloads
+              run independently of API requests</li>
+            <li>Docker Compose orchestrating PostgreSQL, Redis, FastAPI, Celery workers, frontend and
+              Nginx services</li>
+            <li>Ubuntu Linux production infrastructure with persistent storage, health checks,
+              reverse proxying and containerised frontend delivery</li>
+            <li>Structured logging, request ID middleware and authentication middleware built into
+              the request pipeline</li>
+          </ul>
+        </div>
+
+        <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 240ms">
+          <h2>Observability &amp; operations</h2>
+          <ul>
+            <li>Prometheus metrics, health endpoints and structured request logging</li>
+            <li>Request ID tracing across API requests and background processing</li>
+            <li>Diagnosed and resolved deployment issues involving Docker networking, service health
+              checks, application startup, configuration and internal/external routing</li>
+            <li>Git-based deployment workflow for synchronising changes and rebuilding containerised
+              services on the production server</li>
+          </ul>
+        </div>
+
+        <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 300ms">
+          <h2>Engineering highlights</h2>
+          <ul>
+            <li>Clean separation between API layer, asynchronous workers, persistence and provider
+              integrations</li>
+            <li>Provider abstraction pattern — a new communication channel can be added without
+              touching core application logic</li>
+            <li>Retry and delivery-log model designed for diagnosing failures rather than hiding them</li>
           </ul>
         </div>
       </div>
@@ -269,7 +260,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <script src="project.js"></script>
 </body>
 
 </html>

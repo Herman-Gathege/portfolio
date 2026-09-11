@@ -1,142 +1,274 @@
 <!DOCTYPE html>
+<!-- Compiled by Herman Gathege -->
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07080d">
+  <meta name="description"
+    content="Azani SmartDuka POS — a multi-branch retail management SaaS designed for small businesses to track inventory, sales, suppliers and customer credit across multiple locations.">
+  <meta property="og:title" content="Azani SmartDuka — SME Management SaaS | Case study" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://my-portfolio-7v1e.onrender.com/project7.html" />
+  <meta property="og:image" content="https://my-portfolio-7v1e.onrender.com/images/opt/og-card.jpg" />
+  <meta property="og:description" content="A multi-tenant platform for sales, inventory, customer credit and reporting, with Celery and Redis background processing and eTIMS-ready invoicing." />
+  <meta name="twitter:card" content="summary_large_image" />
 
-<title>Azani SmartDuka POS – Case Study</title>
+  <link rel="icon" href="images/opt/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/opt/apple-touch-icon.png">
+  <title>Azani SmartDuka — SME Management SaaS | Case study</title>
 
-<link rel="stylesheet" href="project2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project.css">
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<div class="project-container">
+  <div class="atmosphere" aria-hidden="true">
+    <span class="atmosphere__glow atmosphere__glow--amber"></span>
+    <span class="atmosphere__glow atmosphere__glow--violet"></span>
+    <span class="atmosphere__glow atmosphere__glow--ice"></span>
+    <span class="atmosphere__grid"></span>
+    <span class="atmosphere__grain"></span>
+  </div>
 
-<!-- HEADER -->
-<header class="project-header">
+  <header class="site-header">
+    <nav class="topbar glass glass--float" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">HR</span>
+        <span class="brand__name">Herman Remington</span>
+      </a>
 
-<h1>Azani SmartDuka </h1>
+      <ul class="topbar__menu" id="primary-menu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="about.html#experience">Experience</a></li>
+        <li><a class="nav-link" href="skills.html">Skills</a></li>
+        <li><a class="nav-link is-active" href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
 
-<p class="project-summary">
-A multi-branch retail management SaaS designed for small businesses to track
-inventory, sales, suppliers and customer credit across multiple locations.
-</p>
+      <div class="topbar__actions">
+        <a class="btn btn--glass btn--sm topbar__cv" href="documents/Remington-Herman-2.0cv.pdf" target="_blank"
+          rel="noopener">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span>CV</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"
+          aria-label="Open navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-<div class="project-actions">
-<a href="https://smartduka-blush.vercel.app/" target="_blank" class="btn btn-live">Live Demo</a>
-<a href="https://github.com/Herman-Gathege/sme-management-saas" target="_blank" class="btn btn-code">GitHub</a>
-<a href="index.html" class="btn btn-back">Back</a>
-</div>
+  <main class="project-container shell" id="main">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><span aria-current="page">Azani SmartDuka POS</span></li>
+      </ol>
+    </nav>
 
-</header>
+    <header class="project-header">
+      <p class="eyebrow" data-reveal>Case study</p>
+      <h1 data-reveal style="--reveal-delay: 60ms">Azani SmartDuka — SME Management SaaS</h1>
+      <p class="project-summary" data-reveal style="--reveal-delay: 100ms">
+        A multi-branch retail management SaaS designed for small businesses to track
+        inventory, sales, suppliers and customer credit across multiple locations — built as an
+        organisation-scoped multi-tenant platform with asynchronous processing and
+        eTIMS-ready invoice transmission.
+      </p>
 
+      <div class="project-actions" data-reveal style="--reveal-delay: 140ms">
+        <a class="btn btn--primary" href="https://smartduka-blush.vercel.app/" target="_blank" rel="noopener">
+          Live Demo
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn--glass" href="https://github.com/Herman-Gathege/sme-management-saas" target="_blank"
+          rel="noopener">
+          GitHub
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn--ghost" href="projects.html">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          All projects
+        </a>
+      </div>
+    </header>
 
-<!-- PROJECT META -->
-<section class="project-meta">
+    <section class="project-meta" aria-label="Project details">
+      <div class="meta-card glass glass--card" data-reveal>
+        <span>Role</span>
+        <strong>Fullstack Developer</strong>
+      </div>
 
-<div class="meta-card">
-<span>Role</span>
-<strong>Fullstack Developer</strong>
-</div>
+      <div class="meta-card glass glass--card" data-reveal style="--reveal-delay: 60ms">
+        <span>Stack</span>
+        <strong>React · Flask · PostgreSQL · Celery · Redis</strong>
+      </div>
 
-<div class="meta-card">
-<span>Stack</span>
-<strong>React · Flask · PostgreSQL</strong>
-</div>
+      <div class="meta-card glass glass--card" data-reveal style="--reveal-delay: 120ms">
+        <span>Type</span>
+        <strong>SaaS Platform</strong>
+      </div>
 
-<div class="meta-card">
-<span>Type</span>
-<strong>SaaS Platform</strong>
-</div>
+      <div class="meta-card glass glass--card" data-reveal style="--reveal-delay: 180ms">
+        <span>Architecture</span>
+        <strong>REST API + React SPA (Client-Server Architecture)</strong>
+      </div>
+    </section>
 
-<div class="meta-card">
-<span>Architecture</span>
-<strong>REST API + React SPA (Client-Server Architecture)</strong>
-</div>
+    <section class="project-body">
+      <div class="gallery glass glass--pane" data-gallery aria-roledescription="carousel"
+        aria-label="Azani SmartDuka POS screenshots" tabindex="0" data-reveal>
+        <div class="slideshow">
+          <img class="slide is-active" src="images/opt/azani-1.webp"
+            alt="Azani SmartDuka dashboard shown on a laptop" width="1600" height="1170" decoding="async">
+          <img class="slide" src="images/opt/azani-2.webp" alt="Azani SmartDuka screen 2 of 3" width="1600"
+            height="1170" loading="lazy" decoding="async">
+          <img class="slide" src="images/opt/azani-3.webp" alt="Azani SmartDuka screen 3 of 3" width="1600"
+            height="1170" loading="lazy" decoding="async">
+        </div>
 
-</section>
+        <div class="slideshow__controls">
+          <button class="slideshow__button glass glass--float" type="button" data-slide-prev
+            aria-label="Previous screenshot">
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          </button>
+          <div class="slideshow__dots">
+            <button class="dot is-active" type="button" aria-label="Show screenshot 1"></button>
+            <button class="dot" type="button" aria-label="Show screenshot 2"></button>
+            <button class="dot" type="button" aria-label="Show screenshot 3"></button>
+          </div>
+          <span class="slideshow__counter" aria-live="polite">1 / 3</span>
+          <button class="slideshow__button glass glass--float" type="button" data-slide-next
+            aria-label="Next screenshot">
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
 
+      <div class="info-panel">
+        <div class="info-card glass glass--card" data-reveal>
+          <h2>Problem</h2>
+          <p>
+            Many small shops track stock manually which leads to inaccurate inventory,
+            lost sales data and poor supplier management.
+          </p>
+        </div>
 
-<!-- MAIN CONTENT -->
-<section class="project-body">
+        <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 60ms">
+          <h2>Solution</h2>
+          <p>
+            A lightweight SaaS system allowing shop owners to manage inventory,
+            record sales, track supplier purchases and manage customer credit
+            from a single dashboard.
+          </p>
+        </div>
 
+        <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 120ms">
+          <h2>Key features</h2>
+          <ul>
+            <li>Multi-branch stock tracking</li>
+            <li>POS sales system</li>
+            <li>Supplier purchase management</li>
+            <li>Customer credit tracking</li>
+            <li>Stock history &amp; analytics</li>
+            <li>Sales processing with automatic inventory deduction</li>
+            <li>Debtor management and staff performance attribution</li>
+            <li>Sales summaries, profit estimates and inventory insights</li>
+          </ul>
+        </div>
 
-<!-- LEFT SIDE -->
-<div class="gallery-card">
+        <div class="info-card glass glass--card" data-reveal style="--reveal-delay: 180ms">
+          <h2>Implementation</h2>
+          <ul>
+            <li>Organisation-scoped multi-tenant architecture with authentication and
+              organisation-level authorisation</li>
+            <li>Flask and SQLAlchemy APIs backing sales, inventory, customers and reporting</li>
+            <li>Celery and Redis handling background operations such as invoice transmission</li>
+            <li>Architecture designed for Kenya Revenue Authority eTIMS electronic tax invoice
+              integration</li>
+            <li>Mobile-first React interface optimised for fast point-of-sale workflows</li>
+            <li>Deployed with Vercel and Render</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<div class="slideshow-container">
+    <div class="project-foot">
+      <a class="btn btn--glass" href="projects.html">
+        <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        Back to all projects
+      </a>
+      <a class="btn btn--primary" href="contact.html">
+        Contact me
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </main>
 
-<img src="images/Azani/Azani-1.png" class="slides active">
-<img src="images/Azani/Azani-2.png" class="slides">
-<img src="images/Azani/Azani-3.png" class="slides">
+  <footer class="site-footer">
+    <div class="shell site-footer__inner glass glass--pane">
+      <div class="site-footer__brand">
+        <span class="brand__mark" aria-hidden="true">HR</span>
+        <div>
+          <p class="site-footer__name">Herman Remington</p>
+          <p class="site-footer__role">Software Engineer · SaaS, backend &amp; enterprise systems</p>
+        </div>
+      </div>
 
-</div>
+      <div class="social-link-list">
+        <a href="https://github.com/Herman-Gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/herman-gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/@dev.hashira" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on YouTube">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="https://dribbble.com/SiinamTechStudio" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on Dribbble">
+          <i class="fa-brands fa-dribbble" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.behance.net/Herman_Gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on Behance">
+          <i class="fa-brands fa-behance" aria-hidden="true"></i>
+        </a>
+      </div>
 
-<div class="navigation">
-<button onclick="prevSlide()">← Previous</button>
-<button onclick="nextSlide()">Next →</button>
-</div>
+      <div class="site-footer__meta">
+        <p class="copyright-text">@2026 Webloom Tech Kenya. All rights reserved.</p>
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator" aria-hidden="true">·</span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-<div class="dots">
-<span class="dot" onclick="showSlide(0)"></span>
-<span class="dot" onclick="showSlide(1)"></span>
-<span class="dot" onclick="showSlide(2)"></span>
-</div>
-
-</div>
-
-
-<!-- RIGHT SIDE -->
-<div class="info-panel">
-
-<div class="info-card">
-
-<h3>Problem</h3>
-
-<p>
-Many small shops track stock manually which leads to inaccurate inventory,
-lost sales data and poor supplier management.
-</p>
-
-</div>
-
-
-<div class="info-card">
-
-<h3>Solution</h3>
-
-<p>
-A lightweight SaaS system allowing shop owners to manage inventory,
-record sales, track supplier purchases and manage customer credit
-from a single dashboard.
-</p>
-
-</div>
-
-
-<div class="info-card">
-
-<h3>Key Features</h3>
-
-<ul>
-<li>Multi-branch stock tracking</li>
-<li>POS sales system</li>
-<li>Supplier purchase management</li>
-<li>Customer credit tracking</li>
-<li>Stock history & analytics</li>
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-</div>
-
-<script src="project.js"></script>
-
+  <script src="script.js"></script>
+  <script src="project.js"></script>
 </body>
+
 </html>

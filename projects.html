@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- Compiled by Herman Gathege -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07080d">
+  <meta name="description"
+    content="Projects by Herman Remington (Herman Gathege): AlphaOne rental management SaaS, Notification Pipeline System, SME Management SaaS, AI Real Estate Voice Agent, Hospital Management System and more — with live demos, source code and case studies.">
+  <meta property="og:title" content="Projects Showcase | Herman Remington" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://my-portfolio-7v1e.onrender.com/projects.html" />
+  <meta property="og:image" content="https://my-portfolio-7v1e.onrender.com/images/opt/og-card.jpg" />
+  <meta property="og:description"
+    content="AlphaOne rental management SaaS, Notification Pipeline System, SME Management SaaS, AI Real Estate Voice Agent, Hospital Management System and more — with live demos and source code." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="images/opt/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/opt/apple-touch-icon.png">
+  <title>Projects Showcase | Herman Remington</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Instrument+Serif:ital@1&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="atmosphere" aria-hidden="true">
+    <span class="atmosphere__glow atmosphere__glow--amber"></span>
+    <span class="atmosphere__glow atmosphere__glow--violet"></span>
+    <span class="atmosphere__glow atmosphere__glow--ice"></span>
+    <span class="atmosphere__grid"></span>
+    <span class="atmosphere__grain"></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="topbar glass glass--float" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">HR</span>
+        <span class="brand__name">Herman Remington</span>
+      </a>
+
+      <ul class="topbar__menu" id="primary-menu">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="about.html#experience">Experience</a></li>
+        <li><a class="nav-link" href="skills.html">Skills</a></li>
+        <li><a class="nav-link is-active" href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="topbar__actions">
+        <a class="btn btn--glass btn--sm topbar__cv" href="documents/Remington-Herman-2.0cv.pdf" target="_blank"
+          rel="noopener">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span>CV</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"
+          aria-label="Open navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="shell page-hero__inner">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Projects</span></li>
+          </ol>
+        </nav>
+
+        <p class="eyebrow" data-reveal>Selected work</p>
+        <h1 class="page-hero__title" data-reveal style="--reveal-delay: 60ms">Projects Showcase</h1>
+        <p class="page-hero__lede" data-reveal style="--reveal-delay: 120ms">
+          Ten systems I designed and built — multi-tenant SaaS platforms, backend and AI
+          infrastructure, healthcare tooling and product design. Filter by type or stack, then open
+          a case study for the architecture, scope and outcomes.
+        </p>
+      </div>
+    </div>
+
+    <section class="section section--violet" aria-labelledby="showcase-title">
+      <div class="shell">
+        <h2 class="sr-only" id="showcase-title">All projects</h2>
+
+        <div class="filter-bar glass glass--card" data-reveal>
+          <div class="filter-row" role="group" aria-label="Filter projects by type">
+            <span class="filter-row__label">Type</span>
+            <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="all"
+              aria-pressed="true">All</button>
+            <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="saas"
+              aria-pressed="false">SaaS platforms</button>
+            <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="infrastructure"
+              aria-pressed="false">Backend &amp; AI infrastructure</button>
+            <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="apps"
+              aria-pressed="false">Apps &amp; dashboards</button>
+            <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="marketplaces"
+              aria-pressed="false">Marketplaces &amp; stores</button>
+            <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="design"
+              aria-pressed="false">Product design</button>
+          </div>
+
+          <div class="filter-row" role="group" aria-label="Filter projects by stack">
+            <span class="filter-row__label">Stack</span>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="all"
+              aria-pressed="true">All</button>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="python"
+              aria-pressed="false">Python</button>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="react"
+              aria-pressed="false">React</button>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="fastapi"
+              aria-pressed="false">FastAPI</button>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="flask"
+              aria-pressed="false">Flask</button>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="node"
+              aria-pressed="false">Node.js</button>
+            <button class="filter-chip" type="button" data-filter-group="stack" data-filter-value="figma"
+              aria-pressed="false">Figma</button>
+          </div>
+
+          <p class="filter-status" role="status" aria-live="polite">10 projects shown</p>
+        </div>
+
+        <div class="work__grid work__grid--tight" id="projects-grid">
+          <!-- AlphaOne -->
+          <article class="case-card glass glass--card" data-reveal data-types="saas" data-stack="python react fastapi">
+            <a class="case-card__media media media--tinted" href="project8.html"
+              aria-label="Open the AlphaOne Rental Management System case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/alphaone.webp"
+                  alt="AlphaOne rental management dashboard with tenancy, lease and financial panels" width="1200"
+                  height="630" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <p><span class="chip chip--tag">Flagship · Live product</span></p>
+              <h3 class="case-card__title"><a href="project8.html">AlphaOne Rental Management System</a></h3>
+              <p class="case-card__desc">
+                Multi-tenant property management SaaS for landlords, property managers, finance teams
+                and tenants: leases, rent collection, reconciliation, expenses, inspections,
+                maintenance and financial reporting.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">FastAPI</li>
+                <li class="chip">React</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Redis</li>
+                <li class="chip">Docker</li>
+                <li class="chip">RBAC</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project8.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://alphaone.africa/" target="_blank" rel="noopener">Live product
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/rental-management-system" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Notification Pipeline -->
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 80ms"
+            data-types="infrastructure" data-stack="python fastapi">
+            <a class="case-card__media media media--abstract" href="project9.html"
+              aria-label="Open the Notification Pipeline System case study">
+              <span class="abstract__grid" aria-hidden="true"></span>
+              <span class="abstract__body">
+                <span class="abstract__icon" aria-hidden="true"><i class="fa-solid fa-tower-broadcast"></i></span>
+                <span class="abstract__glyph">Notification Pipeline</span>
+                <span class="abstract__label">Event-driven infrastructure</span>
+              </span>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project9.html">Notification Pipeline System</a></h3>
+              <p class="case-card__desc">
+                Centralised notification infrastructure: applications publish events, workers resolve
+                providers and deliver across email, SMS, SMTP, WhatsApp and Resend — with retries,
+                delivery logs and monitoring.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">FastAPI</li>
+                <li class="chip">Celery</li>
+                <li class="chip">Redis</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Prometheus</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project9.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/notifications_pipeline_system"
+                  target="_blank" rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SME Management SaaS -->
+          <article class="case-card glass glass--card" data-reveal data-types="saas" data-stack="python react flask">
+            <a class="case-card__media media media--tinted" href="project7.html"
+              aria-label="Open the SME Management SaaS case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/azani.webp" alt="Azani SmartDuka sales dashboard shown on a laptop" width="1400"
+                  height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project7.html">Azani SmartDuka — SME Management SaaS</a></h3>
+              <p class="case-card__desc">
+                Multi-tenant platform for small businesses: sales with automatic stock deduction,
+                customer credit and debtor tracking, staff performance attribution, reporting and
+                eTIMS-ready invoice transmission.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Flask</li>
+                <li class="chip">React</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Celery</li>
+                <li class="chip">Redis</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project7.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://smartduka-blush.vercel.app/" target="_blank" rel="noopener">Live demo
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/sme-management-saas" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- AI Real Estate Voice Agent -->
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 80ms"
+            data-types="infrastructure" data-stack="python">
+            <a class="case-card__media media media--abstract media--abstract--amber" href="project10.html"
+              aria-label="Open the AI Real Estate Voice Agent case study">
+              <span class="abstract__grid" aria-hidden="true"></span>
+              <span class="abstract__body">
+                <span class="abstract__icon" aria-hidden="true"><i class="fa-solid fa-wave-square"></i></span>
+                <span class="abstract__glyph">Voice Agent</span>
+                <span class="abstract__label">Real-time AI integration</span>
+              </span>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project10.html">AI Real Estate Voice Agent</a></h3>
+              <p class="case-card__desc">
+                Real-time voice assistant for property enquiries: Twilio WebSocket audio streaming,
+                Deepgram speech-to-text, and domain-specific function calls triggered from live
+                conversations.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Python</li>
+                <li class="chip">WebSockets</li>
+                <li class="chip">Twilio</li>
+                <li class="chip">Deepgram</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project10.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/ai-voice-agent" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://youtu.be/rHdxSFdlmYE" target="_blank" rel="noopener">Demo video
+                  <i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hospital Management System -->
+          <article class="case-card glass glass--card" data-reveal data-types="apps" data-stack="python react flask">
+            <a class="case-card__media media media--tinted" href="project6.html"
+              aria-label="Open the Hospital Management System case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/hospitalops.webp"
+                  alt="Hospital management dashboard with patient and appointment overview" width="1400"
+                  height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project6.html">Hospital Management System</a></h3>
+              <p class="case-card__desc">
+                Healthcare operations system covering patient records, appointments, billing,
+                inventory and analytics, with role-based access to sensitive records.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Flask</li>
+                <li class="chip">React</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Supabase</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project6.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://hospital-manager-app.onrender.com" target="_blank" rel="noopener">Live
+                  demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/Hospital-Manager-App" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Graceful Impressions -->
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 80ms"
+            data-types="marketplaces" data-stack="python react flask">
+            <a class="case-card__media media media--tinted" href="project5.html"
+              aria-label="Open the Graceful Impressions case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/graceful.webp" alt="Graceful Impressions art marketplace website homepage"
+                  width="1400" height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project5.html">Graceful Impressions</a></h3>
+              <p class="case-card__desc">
+                Online art marketplace connecting Kenyan visual artists with collectors and art
+                enthusiasts globally — artist profiles, artwork galleries and exhibition listings.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">React</li>
+                <li class="chip">Flask</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Supabase</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project5.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://graceful-impressions.onrender.com" target="_blank" rel="noopener">Live
+                  demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/graceful-Impressions-clean" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- EduLearn -->
+          <article class="case-card glass glass--card" data-reveal data-types="apps" data-stack="python react flask">
+            <a class="case-card__media media media--tinted" href="project4.html"
+              aria-label="Open the EduLearn Platform case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/edulearn.webp" alt="EduLearn course platform homepage with featured lesson"
+                  width="1400" height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project4.html">EduLearn Platform</a></h3>
+              <p class="case-card__desc">
+                Course discovery platform with search and filtering, reviews and ratings, and
+                JWT-secured accounts backed by a Flask REST API.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">React</li>
+                <li class="chip">Flask</li>
+                <li class="chip">PostgreSQL</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project4.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://edu-learn-new-1.onrender.com" target="_blank" rel="noopener">Live demo
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/Edu-Learn-new" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Everyday Finds -->
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 80ms"
+            data-types="marketplaces" data-stack="react node">
+            <a class="case-card__media media media--tinted" href="project3.html"
+              aria-label="Open the Everyday Finds Store case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/everyday-finds.webp" alt="Everyday Finds e-commerce storefront category grid"
+                  width="1400" height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project3.html">Everyday Finds Store</a></h3>
+              <p class="case-card__desc">
+                Full-stack e-commerce platform with Stripe checkout, product management,
+                Cloudinary image hosting and an admin analytics dashboard.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">React</li>
+                <li class="chip">Node.js</li>
+                <li class="chip">Express</li>
+                <li class="chip">MongoDB</li>
+                <li class="chip">Stripe</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project3.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://e-commerce-template-63p3.onrender.com/" target="_blank"
+                  rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/e-commerce-template" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Recipe Room -->
+          <article class="case-card glass glass--card" data-reveal data-types="design" data-stack="figma">
+            <a class="case-card__media media media--tinted" href="project2.html"
+              aria-label="Open the Recipe Room case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/recipe-room.webp" alt="Recipe Room discovery interface with a featured recipe"
+                  width="1400" height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project2.html">Recipe Room</a></h3>
+              <p class="case-card__desc">
+                Mobile-first recipe discovery concept designed in Figma: category browsing,
+                structured recipe cards and an interactive prototype for usability testing.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Figma</li>
+                <li class="chip">UX Design</li>
+                <li class="chip">Prototyping</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project2.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link"
+                  href="https://www.figma.com/proto/3ztI6BhJ8W9FgMOqJ1m4vb/recipe-website?node-id=1-2&starting-point-node-id=1%3A2"
+                  target="_blank" rel="noopener">Prototype <i class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Herbal Remedy Finder -->
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 80ms" data-types="apps"
+            data-stack="python react flask">
+            <a class="case-card__media media media--tinted" href="project1.html"
+              aria-label="Open the Herbal Remedy Finder case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/herbal-remedy.webp" alt="Herbal Remedy Finder application homepage" width="1024"
+                  height="739" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project1.html">Herbal Remedy Finder</a></h3>
+              <p class="case-card__desc">
+                Searchable herbal remedy database with JWT authentication, community reviews,
+                ratings and a favourites system on a Flask REST API.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">React</li>
+                <li class="chip">Flask</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">JWT</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project1.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link"
+                  href="https://www.figma.com/proto/bRMle5dT4Rbbyaw3CKvzgz/Herbal-Store-(Community)?node-id=118-32&starting-point-node-id=118%3A32&scaling=scale-down-width&content-scaling=fixed&hide-ui=1"
+                  target="_blank" rel="noopener">Prototype <i class="fa-solid fa-arrow-up-right-from-square"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://github.com/Herman-Gathege/herbal-remedy-app" target="_blank"
+                  rel="noopener">Source <i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="work-empty glass glass--card" role="status" hidden>
+          No projects match that combination yet — try a different filter.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--deep" aria-labelledby="projects-cta-title">
+      <div class="shell">
+        <div class="cta-panel glass glass--pane" data-reveal>
+          <div>
+            <p class="eyebrow">Next</p>
+            <h2 class="section-title" id="projects-cta-title">Want the details behind a project?</h2>
+            <p class="section-lede">
+              Every case study covers the problem, solution, key features and implementation —
+              with links to live products and source code.
+            </p>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="btn btn--primary" href="contact.html">
+              Contact me
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn--glass" href="documents/Remington-Herman-2.0cv.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell site-footer__inner glass glass--pane">
+      <div class="site-footer__brand">
+        <span class="brand__mark" aria-hidden="true">HR</span>
+        <div>
+          <p class="site-footer__name">Herman Remington</p>
+          <p class="site-footer__role">Software Engineer · SaaS, backend &amp; enterprise systems</p>
+        </div>
+      </div>
+
+      <div class="social-link-list">
+        <a href="https://github.com/Herman-Gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/herman-gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/@dev.hashira" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on YouTube">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="https://dribbble.com/SiinamTechStudio" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on Dribbble">
+          <i class="fa-brands fa-dribbble" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.behance.net/Herman_Gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on Behance">
+          <i class="fa-brands fa-behance" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="site-footer__meta">
+        <p class="copyright-text">@2026 Webloom Tech Kenya. All rights reserved.</p>
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator" aria-hidden="true">·</span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="projects.js"></script>
+</body>
+
+</html>

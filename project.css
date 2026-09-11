@@ -1,0 +1,294 @@
+/* ==========================================================================
+   project.css — case study pages
+   Layout for the individual project pages. Loads after theme.css and
+   styles.css so it can reuse the shared navigation, breadcrumbs and footer.
+   ========================================================================== */
+
+.project-container {
+  padding-block: calc(var(--topbar-h) + clamp(2.5rem, 6vw, 4.5rem)) var(--s10);
+}
+
+.project-header {
+  max-width: 78ch;
+  margin-top: var(--s7);
+}
+
+.project-header h1 {
+  font-size: var(--fs-h1);
+  margin-top: var(--s5);
+}
+
+.project-summary {
+  margin-top: var(--s5);
+  max-width: 62ch;
+  color: var(--ink-2);
+  font-size: var(--fs-lede);
+  line-height: 1.55;
+  letter-spacing: -0.012em;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: var(--s7);
+}
+
+/* Meta facts ------------------------------------------------------------- */
+.project-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+  gap: var(--s4);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.meta-card {
+  padding: var(--s5);
+  border-radius: var(--r-lg);
+}
+
+.meta-card span {
+  display: block;
+  margin-bottom: var(--s2);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  color: var(--ink-4);
+}
+
+.meta-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+/* Body: gallery + detail cards ------------------------------------------ */
+.project-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+/* Case studies without screenshots: detail cards flow in a grid */
+.project-body--single {
+  grid-template-columns: 1fr;
+}
+
+.project-body--single .info-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  align-items: start;
+}
+
+.project-body--single .info-card:first-child {
+  grid-column: 1 / -1;
+}
+
+.gallery {
+  position: sticky;
+  top: calc(var(--topbar-h) + var(--s5));
+  padding: var(--s4);
+  border-radius: var(--r-2xl);
+}
+
+.slideshow {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background: radial-gradient(120% 100% at 20% 0%, rgba(122, 92, 255, 0.16), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--glass-line-soft);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.slide.is-active {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: slide-in var(--dur-3) var(--ease-out);
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: scale(1.012);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slideshow__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  margin-top: var(--s4);
+  padding-inline: var(--s2);
+}
+
+.slideshow__button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 50%;
+  color: var(--ink);
+  transition:
+    transform var(--dur-2) var(--ease-ios),
+    color var(--dur-2) var(--ease-soft);
+}
+
+.slideshow__button:hover {
+  transform: translate3d(0, -2px, 0);
+  color: var(--brand-bright);
+}
+
+.slideshow__button:active {
+  transform: scale(0.96);
+}
+
+.slideshow__dots {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.dot {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+}
+
+.dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, 0.22);
+  transition:
+    width var(--dur-2) var(--ease-ios),
+    background-color var(--dur-2) var(--ease-soft);
+}
+
+.dot:hover::after {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.dot.is-active::after {
+  width: 18px;
+  background: var(--brand);
+}
+
+.slideshow__counter {
+  flex: none;
+  font-size: var(--fs-xs);
+  color: var(--ink-4);
+  font-variant-numeric: tabular-nums;
+}
+
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.info-card {
+  padding: var(--s5);
+  border-radius: var(--r-lg);
+}
+
+.info-card h2 {
+  font-size: var(--fs-h4);
+  margin-bottom: var(--s3);
+}
+
+.info-card p {
+  color: var(--ink-2);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+}
+
+.info-card ul {
+  display: grid;
+  gap: var(--s2);
+}
+
+.info-card li {
+  position: relative;
+  padding-left: 1.15rem;
+  color: var(--ink-2);
+  font-size: var(--fs-sm);
+  line-height: 1.6;
+}
+
+.info-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  opacity: 0.85;
+}
+
+.info-card .project-actions {
+  margin-top: var(--s4);
+}
+
+/* Footer actions --------------------------------------------------------- */
+.project-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+  margin-top: var(--s9);
+}
+
+@media (max-width: 980px) {
+  .project-body {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    position: static;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-actions .btn,
+  .project-foot .btn {
+    width: 100%;
+  }
+
+  .slideshow__controls {
+    padding-inline: 0;
+  }
+
+  .slideshow__counter {
+    display: none;
+  }
+}

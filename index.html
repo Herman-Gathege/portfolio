@@ -5,31 +5,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07080d">
   <meta name="description"
-    content="I’m Herman Remington (Herman Gathege), a passionate full-stack developer in Nairobi, Kenya. I create websites, apps, and digital solutions with Python, Flask, JavaScript, and React—delivering seamless user experiences and scalable products. Explore my projects and let’s build something amazing together.">
+    content="Herman Remington (Herman Gathege) is a software engineer in Nairobi, Kenya building multi-tenant SaaS platforms, backend APIs and enterprise systems with Python, FastAPI, Flask, Laravel, React, PostgreSQL, Redis, Celery and Docker.">
 
   <meta name="keywords"
-    content="Herman Gathege, Herman Remington, Software Developer, Full-Stack Developer, Web Development, Python, Flask, JavaScript, React, Portfolio, Nairobi, Kenya">
+    content="Herman Gathege, Herman Remington, Software Engineer, Full-Stack Developer, SaaS Developer, Backend Engineer, Python, FastAPI, Flask, Laravel, React, PostgreSQL, Redis, Celery, Docker, ERPNext, M-Pesa, Stripe, Nairobi, Kenya">
 
-  <meta property="og:title" content="Herman Gathege - Full-Stack Developer Portfolio" />
-  <meta property="og:image" content="https://my-portfolio-7v1e.onrender.com/images/prof-pic.JPG" />
+  <meta property="og:title" content="Herman Remington | Software Engineer — SaaS, Backend & Enterprise Systems" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://my-portfolio-7v1e.onrender.com/images/opt/og-card.jpg" />
   <meta property="og:description"
-    content="I’m Herman Remington (Herman Gathege), a full-stack developer from Nairobi, Kenya. I build websites, apps, and digital solutions with Python, Flask, JavaScript, and React. Explore my projects and let’s collaborate." />
+    content="Software engineer building multi-tenant SaaS platforms, backend APIs and enterprise systems. Python, React, PostgreSQL, Redis, Celery and Docker." />
   <meta property="og:url" content="https://my-portfolio-7v1e.onrender.com/portfolio/" />
 
   <meta name="google-site-verification" content="VdCQme8n33c040Wxdx5N1jHfjCB-mQKYqxLKYocY5mI" />
 
-  <link rel="icon" href="images/prof-pic.JPG" type="image/png">
+  <link rel="icon" href="images/opt/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/opt/apple-touch-icon.png">
 
-  <title>Herman Remington | Backend & Full-Stack Engineer</title>
+  <title>Herman Remington | Software Engineer — SaaS, Backend & Enterprise Systems</title>
 
-  <!-- Linking Font Awesome for icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=Instrument+Serif:ital@1&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-  <!-- Linking Swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+  <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="styles.css">
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 
   <script type="application/ld+json">
 {
@@ -37,670 +46,692 @@
   "@type": "Person",
   "name": "Herman Gathege",
   "alternateName": "Herman Remington",
-  "jobTitle": "Backend-Focused Full-Stack Engineer",
-  "url": "https://github.com/Herman-Gathege",
+  "jobTitle": "Software Engineer — SaaS, Backend & Enterprise Systems",
   "url": "https://my-portfolio-7v1e.onrender.com/",
-  "image": "https://my-portfolio-7v1e.onrender.com/images/prof-pic.JPG",
-  "description": "Full-stack software developer specializing in Python, Flask, JavaScript, and React. I build scalable web apps and seamless user experiences.",
+  "image": "https://my-portfolio-7v1e.onrender.com/images/opt/og-card.jpg",
+  "description": "Software engineer specialising in multi-tenant SaaS platforms, backend APIs and enterprise systems using Python, React, PostgreSQL, Redis, Celery and Docker.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Nairobi",
     "addressCountry": "KE"
   },
   "sameAs": [
+    "https://github.com/Herman-Gathege",
     "https://www.linkedin.com/in/herman-gathege",
+    "https://www.youtube.com/@dev.hashira",
     "https://www.behance.net/Herman_Gathege",
     "https://dribbble.com/SiinamTechStudio"
-    
   ]
 }
 </script>
-
 </head>
 
 <body>
-  <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar selection-content">
-      <a href="#" class="nav-logo">
-        <h2 class="logo-text">Herman Remington</h2>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="atmosphere" aria-hidden="true">
+    <span class="atmosphere__glow atmosphere__glow--amber"></span>
+    <span class="atmosphere__glow atmosphere__glow--violet"></span>
+    <span class="atmosphere__glow atmosphere__glow--ice"></span>
+    <span class="atmosphere__grid"></span>
+    <span class="atmosphere__grain"></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="topbar glass glass--float" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">HR</span>
+        <span class="brand__name">Herman Remington</span>
       </a>
-      <ul class="nav-menu">
-        <button id="menu-close-button" class="fas fa-times"></button>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a href="#menu" class="nav-link">What I Build</a>
-        </li>
-        <li class="nav-item">
-          <a href="#testimonials" class="nav-link">Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a href="#projects" class="nav-link">My Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact Me</a>
-        </li>
+
+      <ul class="topbar__menu" id="primary-menu">
+        <li><a class="nav-link is-active" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="about.html#experience">Experience</a></li>
+        <li><a class="nav-link" href="skills.html">Skills</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <button id="menu-open-button" class="fas fa-bars"></button>
+
+      <div class="topbar__actions">
+        <a class="btn btn--glass btn--sm topbar__cv" href="documents/Remington-Herman-2.0cv.pdf" target="_blank"
+          rel="noopener">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span>CV</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"
+          aria-label="Open navigation menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main>
-    <!-- Hero section -->
-    <section class="hero-section">
-      <div class="section-content">
-        <div class="hero-details">
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero__moon" src="images/opt/hero-moon.webp" alt="" aria-hidden="true" width="840" height="644"
+        data-parallax="0.16">
 
-          <h2 class="title">Full-Stack Software Engineer</h2>
+      <div class="hero__inner shell">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal>Software Engineer · Nairobi, Kenya</p>
 
-          <h3 class="subtitle">
-            Building scalable SaaS platforms, APIs, and payment systems.
-          </h3>
+          <h1 class="hero__title" id="hero-title" data-reveal style="--reveal-delay: 60ms">
+            Software Engineer building <span class="accent-italic">SaaS platforms</span> and backend systems
+          </h1>
 
-          <p class="description">
-            Backend-focused full-stack engineer experienced in building multi-tenant SaaS platforms,
-            business-critical APIs, and payment integrations including M-Pesa and Stripe.
+          <p class="hero__lede" data-reveal style="--reveal-delay: 120ms">
+            Multi-tenant products, event-driven backends, and payment infrastructure built for production.
           </p>
 
-          <p class="description">
-            Open to backend and full-stack opportunities, including relocation opportunities across Europe.
-          </p>
+          <div class="hero__actions" data-reveal style="--reveal-delay: 180ms">
+            <a class="btn btn--primary" href="projects.html">
+              View My Work
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn--glass" href="documents/Remington-Herman-2.0cv.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+              Download CV
+            </a>
+            <a class="btn btn--ghost" href="contact.html">Contact Me</a>
+          </div>
 
-
-
-        <!-- <div class="buttons">
-            <a href="documents/Herman-Remington-cv-2026.pdf" class="button order-now" target="_blank">My Resume</a>
-            <a href="documents/HERMAN CERTIFICATE.pdf" class="button contact-us" target="_blank">My Certification</a>
-          </div> -->
-
-        <div class="buttons">
-          <a href="#projects" class="button order-now">View My Work</a>
-          <a href="documents/Remington-Herman-2.0cv.pdf" class="button contact-us" target="_blank">
-            Download CV
-          </a>
-          <a href="documents/HERMAN CERTIFICATE.pdf" class="button contact-us" target="_blank">My Certification</a>
+          <ul class="hero__stack chip-row" aria-label="Primary stack" data-reveal style="--reveal-delay: 240ms">
+            <li class="chip">Python · FastAPI · Flask</li>
+            <li class="chip">React · JavaScript</li>
+            <li class="chip">PostgreSQL · Redis · Celery</li>
+            <li class="chip">Docker · M-Pesa · Stripe</li>
+          </ul>
         </div>
-      </div>
 
-      <div class="hero-image-wrapper">
-        <img src="images/hero-new.jpeg" alt="" class="hero-image" loading="lazy">
+        <figure class="hero__media" data-reveal="scale" style="--reveal-delay: 140ms">
+          <div class="media media--tinted hero__frame" data-tilt>
+            <div class="media__inner" data-parallax="-0.07">
+              <img src="images/opt/hero-portrait.webp" alt="Herman Remington seated at a television studio desk"
+                width="900" height="1125" fetchpriority="high" decoding="async">
+            </div>
+            <span class="media__glare" aria-hidden="true"></span>
+          </div>
+          <figcaption class="hero__badge glass glass--float">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for backend &amp; full-stack roles</span>
+          </figcaption>
+        </figure>
       </div>
-      </div>
-
-      <!-- Spaceman -->
-      <!-- <div class="spaceman-container">
-        <img src="images/spaceman.png" alt="Spaceman" class="spaceman" />
-      </div> -->
-
-      <!-- <div class="shooting-stars-container"></div> -->
     </section>
 
-    <!-- About me section -->
-    <section class="about-section" id="about">
-      <div class="section-content">
-
-        <!-- Bento Image Grid -->
-        <div class="about-bento">
-          <img src="images/portfolio-3.jpg" alt="Profile" class="bento-item bento-main" loading="lazy">
-
-          <img src="images/portfolio-1.jpg" alt="Work 1" class="bento-item" loading="lazy">
-          <img src="images/portfolio-2.jpg" alt="Work 2" class="bento-item" loading="lazy">
-          <img src="images/prof.JPG" alt="Work 3" class="bento-item" loading="lazy">
-          <img src="images/portfolio-4.jpg" alt="Work 4" class="bento-item" loading="lazy">
-          <img src="images/portfolio-5.jpg" alt="Work 5" class="bento-item" loading="lazy">
+    <!-- Recruiter snapshot -->
+    <section class="section" id="about" aria-labelledby="snapshot-title">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>The short version</p>
+          <h2 class="section-title" id="snapshot-title" data-reveal style="--reveal-delay: 60ms">
+            What I do, right now
+          </h2>
         </div>
 
-        <!-- About Text -->
-        <div class="about-details">
-          <h2 class="section-title">About Me</h2>
+        <div class="facts">
+          <div class="fact glass glass--card" data-reveal>
+            <span class="fact__label">Current role</span>
+            <p class="fact__value">
+              ICT Innovation &amp; ERP Developer Intern, Kenya Broadcasting Corporation —
+              <a href="about.html#experience">see experience</a>
+            </p>
+          </div>
 
-          <p class="text">
-            I'm Herman Remington, a backend-focused full-stack engineer specializing in SaaS platforms,
-            API development, and scalable system design. I’ve built production applications that handle
-            payroll processing, payment integrations (M-Pesa & Stripe), and multi-tenant architectures
-            for SMEs and startups.
+          <div class="fact glass glass--card" data-reveal style="--reveal-delay: 60ms">
+            <span class="fact__label">Focus</span>
+            <p class="fact__value">Multi-tenant SaaS, backend APIs, event-driven processing and enterprise
+              workflow automation.</p>
+          </div>
+
+          <div class="fact glass glass--card" data-reveal style="--reveal-delay: 120ms">
+            <span class="fact__label">Primary stack</span>
+            <p class="fact__value">Python · FastAPI · Flask · Laravel · React · PostgreSQL · Redis · Celery ·
+              Docker.</p>
+          </div>
+
+          <div class="fact glass glass--card" data-reveal style="--reveal-delay: 180ms">
+            <span class="fact__label">Based in</span>
+            <p class="fact__value">Nairobi &amp; Mombasa, Kenya — open to remote and relocation across Europe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About teaser -->
+    <section class="section section--amber" aria-labelledby="intro-title">
+      <div class="shell about-teaser__grid">
+        <figure class="media media--tinted about-teaser__frame" data-reveal="scale">
+          <div class="media__inner" data-parallax="0.06">
+            <img src="images/opt/profile-portrait.webp" alt="Herman Remington at his graduation ceremony"
+              width="1000" height="1250" loading="lazy" decoding="async">
+          </div>
+          <span class="media__glare" aria-hidden="true"></span>
+        </figure>
+
+        <div class="about-teaser__copy">
+          <p class="eyebrow" data-reveal>About</p>
+          <h2 class="section-title" id="intro-title" data-reveal style="--reveal-delay: 60ms">
+            Backend depth, end-to-end ownership
+          </h2>
+
+          <p class="about-teaser__text" data-reveal style="--reveal-delay: 120ms">
+            I started by building full-stack applications and now design multi-tenant platforms,
+            event-driven backends, and the payment, notification and automation workflows that
+            businesses run on. I care about systems that stay correct under real operational load.
           </p>
 
-          <p class="text">
-            I focus on writing clean, maintainable code while designing systems that scale efficiently.
-            My approach combines strong backend engineering with intuitive frontend experiences,
-            ensuring both performance and usability.
+          <p class="about-teaser__text" data-reveal style="--reveal-delay: 160ms">
+            That means requirements analysis, data modelling, API design, frontend delivery,
+            containerised deployment, observability, and the unglamorous production debugging
+            in between.
           </p>
 
+          <ul class="chip-row" data-reveal style="--reveal-delay: 200ms" aria-label="Core technologies">
+            <li class="chip chip--tag">Python (FastAPI, Flask)</li>
+            <li class="chip chip--tag">React &amp; JavaScript</li>
+            <li class="chip chip--tag">Laravel</li>
+            <li class="chip chip--tag">PostgreSQL</li>
+            <li class="chip chip--tag">Redis &amp; Celery</li>
+            <li class="chip chip--tag">Docker</li>
+            <li class="chip chip--tag">ERPNext &amp; Frappe</li>
+          </ul>
+
+          <div class="about-teaser__actions" data-reveal style="--reveal-delay: 240ms">
+            <a class="btn btn--primary" href="about.html">
+              More about me
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn--glass" href="about.html#experience">Experience</a>
+            <a class="btn btn--ghost" href="skills.html">Skills</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience snapshot -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="shell">
+        <div class="section-head section-head--row">
           <div>
-            <h3 class="text">Core Technologies</h3>
-            <p class="text">
-              Python (Flask), JavaScript (React), PostgreSQL, SQLAlchemy, REST APIs,
-              JWT Authentication, Stripe, M-Pesa, Celery, Redis
-            </p>
+            <p class="eyebrow" data-reveal>Experience</p>
+            <h2 class="section-title" id="experience-title" data-reveal style="--reveal-delay: 60ms">
+              Where I've worked
+            </h2>
           </div>
-
-          <div class="social-link-list">
-
-            <a href="https://www.youtube.com/@dev.hashira" target="_blank" class="social-link">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://github.com/Herman-Gathege" target="_blank" class="social-link">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/_dev.hashira" target="_blank" class="social-link">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-
-            <a href="https://dribbble.com/SiinamTechStudio" target="_blank" class="social-link">
-              <i class="fa-brands fa-dribbble"></i>
-            </a>
-
-            <a href="https://www.behance.net/Herman_Gathege" target="_blank" class="social-link">
-              <i class="fa-brands fa-behance"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/herman-gathege" target="_blank" class="social-link">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </div>
-
+          <a class="btn btn--ghost" href="about.html#experience" data-reveal style="--reveal-delay: 120ms">
+            Full experience
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
 
-      </div>
-    </section>
-
-
-    <!-- What i can do section -->
-    <section class="menu-section" id="menu">
-      <div class="stars-wrapper"></div>
-
-      <h2 class="section-title">What I Build</h2>
-      <div class="section-content">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <img src="images/Design and Development.jpeg" alt="Hot Beverages" class="menu-image" loading="lazy">
-            <h3 class="name">Scalable SaaS Platforms</h3>
-            <p class="text">
-              I design and develop multi-tenant SaaS applications with role-based access,
-              real-time data handling, and scalable backend architecture.
+        <div class="timeline">
+          <article class="role role--current glass glass--card" data-reveal>
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">ICT Innovation &amp; ERP Developer Intern</h3>
+                <p class="role__company">Kenya Broadcasting Corporation · ICT Innovation Team</p>
+              </div>
+              <p class="role__meta">Apr 2026 – Apr 2027</p>
+            </div>
+            <p class="role__summary">
+              Analysing manual departmental processes and turning them into structured digital
+              workflows with ERPNext and the Frappe Framework — document handling, approvals,
+              reporting and inter-departmental automation.
             </p>
-          </li>
-          <li class="menu-item">
-            <img src="images/user.jpeg" alt="Cold Beverages" class="menu-image" loading="lazy">
-            <h3 class="name">Backend APIs & System Architecture</h3>
-            <p class="text">
-              I build secure and efficient REST APIs with authentication, data modeling,
-              and performance optimization for production environments.
-            </p>
-
-          </li>
-          <li class="menu-item">
-            <img src="images/custom.jpeg" alt="Refreshments" class="menu-image" loading="lazy">
-            <h3 class="name">Payment & Financial Systems</h3>
-            <p class="text">
-              Experience integrating payment systems like Stripe and M-Pesa,
-              handling transactions, subscriptions, and financial workflows.
-            </p>
-          </li>
-          <li class="menu-item">
-            <img src="images/maintenance.jpeg" alt="Special combo" class="menu-image" loading="lazy">
-            <h3 class="name">Maintenance and Support</h3>
-            <p class="text">I provide ongoing support to ensure your site stays up to date and runs smoothly.
-            </p>
-          </li>
-          <li class="menu-item">
-            <img src="images/responsive.jpeg" alt="burger & french fries" class="menu-image" loading="lazy">
-            <h3 class="name">Asynchronous Processing</h3>
-            <p class="text">
-              Implement background job processing using Celery and Redis to handle
-              heavy operations without blocking user requests.
-            </p>
-          </li>
-          <li class="menu-item">
-            <img src="images/team.jpeg" alt="desserts" class="menu-image" loading="lazy">
-            <h3 class="name">Team Collaboration</h3>
-            <p class="text">Working with cross-functional teams to deliver projects on time and improve product quality.
-            </p>
-          </li>
-
-        </ul>
-      </div>
-    </section>
-
-    <!-- Testimonials section -->
-    <section class="testimonials-section" id="testimonials">
-      <h2 class="section-title">Testimonials</h2>
-      <div class="section-content">
-        <div class="slider-container swiper">
-          <div class="slider-wrapper">
-            <ul class="testimonials-list swiper-wrapper">
-              <li class="testimonial swiper-slide">
-                <img src="images/mark-silas.jpg" alt="Mark Silas" class="user-image" loading="lazy">
-                <h3 class="name">Mark Silas</h3>
-                <i class="feedback">"Herman is an exceptional teammate. His backend expertise and attention to detail
-                  always ensure our projects are robust and scalable."</i>
-              </li>
-              <li class="testimonial swiper-slide">
-                <img src="images/anne-waithaka.jpg" alt="Anne Waithaka" class="user-image" loading="lazy">
-                <h3 class="name">Anne Waithaka</h3>
-                <i class="feedback">"I admire Herman's ability to simplify complex tasks. His React.js skills made our
-                  UI projects not just functional but elegant."</i>
-              </li>
-              <li class="testimonial swiper-slide">
-                <img src="images/phoebe-aleph.jpg" alt="Phoebe Aleph" class="user-image" loading="lazy">
-                <h3 class="name">Phoebe Aleph</h3>
-                <i class="feedback">"Working with Herman is a delight. His problem-solving skills and innovative ideas
-                  elevate every project we collaborate on."</i>
-              </li>
-              <li class="testimonial swiper-slide">
-                <img src="images/muktar-abdi.jpg" alt="Muktar Abdi" class="user-image" loading="lazy">
-                <h3 class="name">Muktar Abdi</h3>
-                <i class="feedback">"Herman's leadership and coding expertise are unparalleled. He has an incredible
-                  knack for transforming visions into reality."</i>
-              </li>
-              <li class="testimonial swiper-slide">
-                <img src="images/larry-mecha.jpg" alt="Larry Mecha" class="user-image" loading="lazy">
-                <h3 class="name">Larry Mecha</h3>
-                <i class="feedback">"Herman's commitment to excellence is evident in every project. His API design
-                  skills are top-notch!"</i>
-              </li>
-
+            <ul class="role__tags chip-row">
+              <li class="chip">ERPNext</li>
+              <li class="chip">Frappe</li>
+              <li class="chip">MariaDB</li>
+              <li class="chip">BPR</li>
             </ul>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-slide-button swiper-button-prev"></div>
-            <div class="swiper-slide-button swiper-button-next"></div>
-          </div>
+          </article>
+
+          <article class="role glass glass--card" data-reveal>
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">Full-Stack Developer</h3>
+                <p class="role__company">Evolve Payroll &amp; HR · Remote</p>
+              </div>
+              <p class="role__meta">Oct 2025 – Jan 2026</p>
+            </div>
+            <p class="role__summary">
+              Payroll and HR SaaS for SMEs running up to 500 employees: Kenyan statutory deductions,
+              role-based employee management, salary advance workflows, and M-Pesa and bank
+              disbursement with reconciliation tracking.
+            </p>
+            <ul class="role__tags chip-row">
+              <li class="chip">Laravel</li>
+              <li class="chip">React</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">JWT</li>
+            </ul>
+          </article>
+
+          <article class="role glass glass--card" data-reveal>
+            <div class="role__head">
+              <div>
+                <h3 class="role__title">Freelance Full-Stack Developer</h3>
+                <p class="role__company">BRS Holding · Remote</p>
+              </div>
+              <p class="role__meta">May 2025 – Jun 2025</p>
+            </div>
+            <p class="role__summary">
+              Customised and deployed an AI content SaaS: Claude through the OpenRouter API,
+              usage-based credits with daily quotas, and Stripe subscription tiers on Ubuntu
+              production infrastructure.
+            </p>
+            <ul class="role__tags chip-row">
+              <li class="chip">React</li>
+              <li class="chip">Supabase</li>
+              <li class="chip">Stripe</li>
+              <li class="chip">OpenRouter</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Projects section -->
-    <section class="projects-section" id="projects">
-
-      <h2 class="section-title">Featured Projects</h2>
-      <p class="section-subtitle">
-        A selection of full-stack applications, product designs, and systems I built.
-      </p>
-
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <a href="project8.html">
-            <img src="images/alphaone/alphaone.png" alt="AlphaOne Rental Management System">
-          </a>
-
-          <div class="project-content">
-
-            <h3>AlphaOne Rental Management System</h3>
-
-            <p class="project-desc">
-              Multi-tenant property management platform for managing properties,
-              tenants, leases, payments and rental operations across Kenya and East Africa.
-            </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>FastAPI</span>
-              <span>PostgreSQL</span>
-              <span>Redis</span>
-              <span>Docker</span>
-            </div>
-
-            <div class="project-links">
-              <a href="project8.html">View Project</a>
-            </div>
-
+    <!-- Capability preview -->
+    <section class="section section--violet" id="menu" aria-labelledby="build-title">
+      <div class="shell">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-reveal>What I build</p>
+            <h2 class="section-title" id="build-title" data-reveal style="--reveal-delay: 60ms">
+              Systems that hold up in production
+            </h2>
           </div>
+          <a class="btn btn--ghost" href="skills.html" data-reveal style="--reveal-delay: 120ms">
+            All skills &amp; expertise
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
         </div>
 
-        <!-- Project -->
-        <div class="project-card">
-          <a href="project7.html">
-            <img src="images/Azani/Azani-1.png" alt="Azani SmartDuka POS">
-          </a>
-
-          <div class="project-content">
-
-            <h3>Azani SmartDuka POS</h3>
-
-            <p class="project-desc">
-              Multi-tenant retail management platform enabling SMEs to track sales,
-              manage inventory, and monitor customer credit in real time.
-              Designed for scalability with business-level reporting and operational insights.
+        <ul class="build__grid">
+          <li class="build__card glass glass--card" data-reveal>
+            <div class="build__icon">
+              <img src="images/opt/build-saas.webp" alt="" width="736" height="552" loading="lazy" decoding="async">
+            </div>
+            <h3 class="build__name">Multi-tenant SaaS platforms</h3>
+            <p class="build__text">
+              Organisation-scoped platforms with role-based access, isolated business data,
+              billing logic and reporting that stays reliable as tenants grow.
             </p>
+          </li>
 
-            <div class="project-tech">
-              <span>React</span>
-              <span>Flask</span>
-              <span>PostgreSQL</span>
+          <li class="build__card glass glass--card" data-reveal style="--reveal-delay: 80ms">
+            <div class="build__icon">
+              <img src="images/opt/build-api.webp" alt="" width="735" height="551" loading="lazy" decoding="async">
             </div>
-
-            <div class="project-links">
-              <a href="project7.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <a href="project6.html">
-            <img src="images/hosiapp/slide a2.png" alt="HospitalOps Dashboard">
-          </a>
-
-          <div class="project-content">
-
-            <h3>HospitalOps Dashboard</h3>
-
-            <p class="project-desc">
-              Hospital operations system for managing patients, staff,
-              appointments and healthcare records.
+            <h3 class="build__name">Backend APIs &amp; architecture</h3>
+            <p class="build__text">
+              Modular REST APIs with authentication, database modelling, migrations and
+              asynchronous workers that keep heavy operations off the request path.
             </p>
+          </li>
 
-            <div class="project-tech">
-              <span>React</span>
-              <span>Flask</span>
-              <span>Supabase</span>
+          <li class="build__card glass glass--card" data-reveal style="--reveal-delay: 160ms">
+            <div class="build__icon">
+              <img src="images/opt/build-payments.webp" alt="" width="736" height="552" loading="lazy"
+                decoding="async">
             </div>
-
-            <div class="project-links">
-              <a href="project6.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <a href="project5.html">
-            <img src="images/graceful/slide a2.png" alt="Graceful Impressions">
-          </a>
-
-          <div class="project-content">
-
-            <h3>Graceful Impressions</h3>
-
-            <p class="project-desc">
-              Online art marketplace connecting visual artists with collectors
-              and art enthusiasts globally.
+            <h3 class="build__name">Payments &amp; financial workflows</h3>
+            <p class="build__text">
+              M-Pesa and Stripe integrations, subscriptions, payroll deductions, credit tracking
+              and reconciliation flows that have to balance every time.
             </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>Flask</span>
-              <span>PostgreSQL</span>
-            </div>
-
-            <div class="project-links">
-              <a href="project5.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <a href="project4.html">
-            <img src="images/edulearn/slide a2.png" alt="EduLearn Platform">
-          </a>
-
-          <div class="project-content">
-
-            <h3>EduLearn Platform</h3>
-
-            <p class="project-desc">
-              Course discovery platform enabling users to browse learning
-              content, reviews and recommendations.
-            </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>Flask</span>
-              <span>PostgreSQL</span>
-            </div>
-
-            <div class="project-links">
-              <a href="project4.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <a href="project3.html">
-            <img src="images/everyday-finds/slide a1.png" alt="Everyday Finds Store">
-          </a>
-
-          <div class="project-content">
-
-            <h3>Everyday Finds Store</h3>
-
-            <p class="project-desc">
-              Full-stack e-commerce platform with Stripe payments,
-              product management and admin analytics.
-            </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-            </div>
-
-            <div class="project-links">
-              <a href="project3.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <a href="project2.html">
-            <img src="images/recipe-room/slide a1.png" alt="Recipe Room">
-          </a>
-
-          <div class="project-content">
-
-            <h3>Recipe Room</h3>
-
-            <p class="project-desc">
-              User-centered recipe discovery interface designed to simplify
-              meal browsing and inspiration.
-            </p>
-
-            <div class="project-tech">
-              <span>Figma</span>
-              <span>UX Design</span>
-            </div>
-
-            <div class="project-links">
-              <a href="project2.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-        <div class="project-card">
-          <a href="project1.html">
-            <img src="images/herbal-repo.png" alt="Herbal Remedy Finder">
-          </a>
-
-          <div class="project-content">
-
-            <h3>Herbal Remedy Finder</h3>
-
-            <p class="project-desc">
-              Searchable herbal remedy database allowing users to review,
-              save and explore natural treatments.
-            </p>
-
-            <div class="project-tech">
-              <span>React</span>
-              <span>Flask</span>
-              <span>PostgreSQL</span>
-            </div>
-
-            <div class="project-links">
-              <a href="project1.html">View Project</a>
-            </div>
-
-          </div>
-        </div>
-
-
-      </div>
-
-    </section>
-
-    <!-- Contact section -->
-    <section class="contact-section" id="contact">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="section-content">
-        <ul class="contact-info-list">
-          <li class="contact-info">
-            <i class="fa-solid fa-location-crosshairs"></i>
-            <p>Kenya - Nairobi-Mombasa</p>
           </li>
-          <li class="contact-info">
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:remingtonherman7@gmail.com">remingtonherman7@gmail.com</a>
-          </li>
-          <li class="contact-info" style="color: #3b141c; font-weight: 600; font-size: 1.1rem;">
-            <i class="fa-solid fa-globe"></i>
-            <p>Available for international opportunities and relocation.</p>
-          </li>
-
-
-          <li class="contact-info">
-            <i class="fa-solid fa-phone"></i>
-            <p>+254-725-325-915</p>
-          </li>
-
-          <li class="contact-info">
-            <i class="fa-solid fa-clock"></i>
-            <p>Monday - Friday: 9:00am - 5:00pm</p>
-          </li>
-          <li class="contact-info">
-            <i class="fa-solid fa-clock"></i>
-            <p>Saturday 11am - 4:30pm</p>
-          </li>
-          <li class="contact-info">
-            <i class="fa-solid fa-clock"></i>
-            <p>Sunday: Closed</p>
-          </li>
-          <li class="contact-info">
-            <i class="fa-solid fa-globe"></i>
-            <a href="https://webloom-tech.onrender.com/" target="_blank">
-              Webloom Tech Kenya <i class="fa-solid fa-up-right-from-square"></i>
-            </a>
-          </li>
-
         </ul>
-        <!-- <form action="#" class="contact-form">
-              <input type="text" placeholder="Your name" class="form-input" required>
-              <input type="email" placeholder="Your email" class="form-input" required>
-              <textarea placeholder="Your message" class="form-input" required></textarea>
-              <button class="submit-button">Submit</button>
-            </form> -->
-
-        <form action="https://formspree.io/f/xgvebglk" method="POST" class="contact-form">
-          <input type="text" name="name" placeholder="Your name" class="form-input" required>
-          <input type="email" name="email" placeholder="Your email" class="form-input" required>
-          <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
-          <button type="submit" class="submit-button">Submit</button>
-        </form>
-
       </div>
     </section>
 
-    <!-- Footer section -->
-    <footer class="footer-section">
-      <div class="section-content">
-        <p class="copyright-text">@2026 Webloom Tech Kenya. All rights reserved.</p>
-
-        <div class="social-link-list">
-          <!-- Dribbble -->
-          <a href="https://dribbble.com/SiinamTechStudio" target="_blank" class="social-link">
-            <i class="fa-brands fa-dribbble"></i>
-          </a>
-
-          <!-- Behance -->
-          <a href="https://www.behance.net/Herman_Gathege" target="_blank" class="social-link">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-
-          <!-- Instagram -->
-          <!-- <a href="https://www.instagram.com/exampleuser" target="_blank" class="social-link">
-            <i class="fa-brands fa-instagram"></i>
-          </a> -->
-
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/herman-gathege" target="_blank" class="social-link">
-            <i class="fa-brands fa-linkedin"></i>
+    <!-- Featured projects -->
+    <section class="section" id="projects" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow" data-reveal>Selected work</p>
+            <h2 class="section-title" id="work-title" data-reveal style="--reveal-delay: 60ms">
+              Featured Projects
+            </h2>
+            <p class="section-lede" data-reveal style="--reveal-delay: 100ms">
+              SaaS platforms, backend infrastructure and AI integrations — with the architecture
+              behind each one.
+            </p>
+          </div>
+          <a class="btn btn--glass" href="projects.html" data-reveal style="--reveal-delay: 140ms">
+            Browse all projects
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
 
-        <p class="policy-text">
-          <a href="#" class="policy-link">Privacy policy</a>
-          <span class="separator">.</span>
-          <a href="#" class="policy-link">Refund policy</a>
+        <article class="case" data-reveal>
+          <a class="case__media media media--tinted" href="project8.html"
+            aria-label="Open the AlphaOne Rental Management System case study">
+            <div class="media__inner" data-parallax="0.05">
+              <img src="images/opt/alphaone.webp"
+                alt="AlphaOne rental management dashboard with tenancy, lease and financial panels" width="1200"
+                height="630" loading="lazy" decoding="async">
+            </div>
+            <span class="media__glare" aria-hidden="true"></span>
+          </a>
 
-        </p>
+          <div class="case__body">
+            <p class="case__flag"><span class="chip chip--tag">Flagship · Live product</span></p>
+            <h3 class="case__title"><a href="project8.html">AlphaOne Rental Management System</a></h3>
+            <p class="case__desc">
+              Multi-tenant property management SaaS for landlords, property managers, finance teams
+              and tenants — leases, rent collection, reconciliation, maintenance and reporting,
+              with Docker-based production infrastructure.
+            </p>
+            <ul class="chip-row case__tech">
+              <li class="chip">FastAPI</li>
+              <li class="chip">React</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">Redis</li>
+              <li class="chip">Docker</li>
+              <li class="chip">RBAC</li>
+            </ul>
+            <div class="case__links">
+              <a class="btn btn--primary btn--sm" href="project8.html">
+                View case study
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn--glass btn--sm" href="https://alphaone.africa/" target="_blank" rel="noopener">
+                Live product
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn--ghost btn--sm" href="https://github.com/Herman-Gathege/rental-management-system"
+                target="_blank" rel="noopener">
+                Source
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <div class="work__grid work__grid--tight">
+          <article class="case-card glass glass--card" data-reveal>
+            <a class="case-card__media media media--abstract" href="project9.html"
+              aria-label="Open the Notification Pipeline System case study">
+              <span class="abstract__grid" aria-hidden="true"></span>
+              <span class="abstract__body">
+                <span class="abstract__icon" aria-hidden="true"><i class="fa-solid fa-tower-broadcast"></i></span>
+                <span class="abstract__glyph">Notification Pipeline</span>
+                <span class="abstract__label">Event-driven infrastructure</span>
+              </span>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project9.html">Notification Pipeline System</a></h3>
+              <p class="case-card__desc">
+                Centralised notification infrastructure: events in, multi-provider delivery out,
+                with retries, delivery logs and monitoring.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">FastAPI</li>
+                <li class="chip">Celery</li>
+                <li class="chip">Redis</li>
+                <li class="chip">Prometheus</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project9.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 80ms">
+            <a class="case-card__media media media--tinted" href="project7.html"
+              aria-label="Open the SME Management SaaS case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/azani.webp" alt="Azani SmartDuka sales dashboard shown on a laptop" width="1400"
+                  height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project7.html">Azani SmartDuka — SME Management SaaS</a></h3>
+              <p class="case-card__desc">
+                Multi-tenant retail platform for sales, inventory, customer credit and reporting,
+                built for how small businesses actually operate.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Flask</li>
+                <li class="chip">React</li>
+                <li class="chip">Celery</li>
+                <li class="chip">eTIMS</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project7.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://smartduka-blush.vercel.app/" target="_blank" rel="noopener">Live demo
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 160ms">
+            <a class="case-card__media media media--abstract media--abstract--amber" href="project10.html"
+              aria-label="Open the AI Real Estate Voice Agent case study">
+              <span class="abstract__grid" aria-hidden="true"></span>
+              <span class="abstract__body">
+                <span class="abstract__icon" aria-hidden="true"><i class="fa-solid fa-wave-square"></i></span>
+                <span class="abstract__glyph">Voice Agent</span>
+                <span class="abstract__label">Real-time AI integration</span>
+              </span>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project10.html">AI Real Estate Voice Agent</a></h3>
+              <p class="case-card__desc">
+                Real-time voice assistant for property enquiries, streaming audio over WebSockets
+                and triggering domain-specific actions.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Python</li>
+                <li class="chip">Twilio</li>
+                <li class="chip">Deepgram</li>
+                <li class="chip">WebSockets</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project10.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card glass glass--card" data-reveal style="--reveal-delay: 240ms">
+            <a class="case-card__media media media--tinted" href="project6.html"
+              aria-label="Open the Hospital Management System case study">
+              <div class="media__inner" data-parallax="0.04">
+                <img src="images/opt/hospitalops.webp"
+                  alt="Hospital management dashboard with patient and appointment overview" width="1400"
+                  height="1024" loading="lazy" decoding="async">
+              </div>
+              <span class="media__glare" aria-hidden="true"></span>
+            </a>
+            <div class="case-card__body">
+              <h3 class="case-card__title"><a href="project6.html">Hospital Management System</a></h3>
+              <p class="case-card__desc">
+                Healthcare operations system covering patients, appointments, billing, inventory
+                and analytics with role-based access.
+              </p>
+              <ul class="chip-row">
+                <li class="chip">Flask</li>
+                <li class="chip">React</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">Supabase</li>
+              </ul>
+              <div class="case-card__links">
+                <a class="text-link" href="project6.html">Case study <i class="fa-solid fa-arrow-right"
+                    aria-hidden="true"></i></a>
+                <a class="text-link" href="https://hospital-manager-app.onrender.com" target="_blank" rel="noopener">Live
+                  demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </footer>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--amber" id="testimonials" aria-labelledby="voices-title">
+      <div class="shell">
+        <div class="section-head section-head--center">
+          <p class="eyebrow" data-reveal>Collaboration</p>
+          <h2 class="section-title" id="voices-title" data-reveal style="--reveal-delay: 60ms">Testimonials</h2>
+        </div>
+
+        <div class="voices__slider swiper" role="region" aria-label="Testimonials from colleagues" data-reveal>
+          <ul class="swiper-wrapper">
+            <li class="voice swiper-slide glass glass--card">
+              <blockquote class="voice__quote">
+                <p>"Herman is an exceptional teammate. His backend expertise and attention to detail
+                  always ensure our projects are robust and scalable."</p>
+              </blockquote>
+              <figure class="voice__person">
+                <img src="images/opt/avatar-mark-silas.webp" alt="" width="360" height="360" loading="lazy"
+                  decoding="async">
+                <figcaption>Mark Silas</figcaption>
+              </figure>
+            </li>
+
+            <li class="voice swiper-slide glass glass--card">
+              <blockquote class="voice__quote">
+                <p>"I admire Herman's ability to simplify complex tasks. His React.js skills made our
+                  UI projects not just functional but elegant."</p>
+              </blockquote>
+              <figure class="voice__person">
+                <img src="images/opt/avatar-anne-waithaka.webp" alt="" width="360" height="360" loading="lazy"
+                  decoding="async">
+                <figcaption>Anne Waithaka</figcaption>
+              </figure>
+            </li>
+
+            <li class="voice swiper-slide glass glass--card">
+              <blockquote class="voice__quote">
+                <p>"Working with Herman is a delight. His problem-solving skills and innovative ideas
+                  elevate every project we collaborate on."</p>
+              </blockquote>
+              <figure class="voice__person">
+                <img src="images/opt/avatar-phoebe-aleph.webp" alt="" width="360" height="360" loading="lazy"
+                  decoding="async">
+                <figcaption>Phoebe Aleph</figcaption>
+              </figure>
+            </li>
+
+            <li class="voice swiper-slide glass glass--card">
+              <blockquote class="voice__quote">
+                <p>"Herman's leadership and coding expertise are unparalleled. He has an incredible
+                  knack for transforming visions into reality."</p>
+              </blockquote>
+              <figure class="voice__person">
+                <img src="images/opt/avatar-muktar-abdi.webp" alt="" width="360" height="360" loading="lazy"
+                  decoding="async">
+                <figcaption>Muktar Abdi</figcaption>
+              </figure>
+            </li>
+
+            <li class="voice swiper-slide glass glass--card">
+              <blockquote class="voice__quote">
+                <p>"Herman's commitment to excellence is evident in every project. His API design
+                  skills are top-notch!"</p>
+              </blockquote>
+              <figure class="voice__person">
+                <img src="images/opt/avatar-larry-mecha.webp" alt="" width="360" height="360" loading="lazy"
+                  decoding="async">
+                <figcaption>Larry Mecha</figcaption>
+              </figure>
+            </li>
+          </ul>
+
+          <div class="voices__controls">
+            <button class="swiper-button-prev glass glass--float" type="button" aria-label="Previous testimonial">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-next glass glass--float" type="button" aria-label="Next testimonial">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact call to action -->
+    <section class="section section--deep" id="contact" aria-labelledby="cta-title">
+      <div class="shell">
+        <div class="cta-panel glass glass--pane" data-reveal>
+          <div>
+            <p class="eyebrow">Next step</p>
+            <h2 class="section-title" id="cta-title">Let's talk about what you're building</h2>
+            <p class="section-lede">
+              Available for backend and full-stack roles, including relocation opportunities across Europe.
+              The fastest way to reach me is email.
+            </p>
+          </div>
+          <div class="cta-panel__actions">
+            <a class="btn btn--primary" href="contact.html">
+              Contact Me
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn--glass" href="mailto:remingtonherman7@gmail.com">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Linking Swiper script -->
+  <footer class="site-footer">
+    <div class="shell site-footer__inner glass glass--pane">
+      <div class="site-footer__brand">
+        <span class="brand__mark" aria-hidden="true">HR</span>
+        <div>
+          <p class="site-footer__name">Herman Remington</p>
+          <p class="site-footer__role">Software Engineer · SaaS, backend &amp; enterprise systems</p>
+        </div>
+      </div>
+
+      <div class="social-link-list">
+        <a href="https://github.com/Herman-Gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/herman-gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.youtube.com/@dev.hashira" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on YouTube">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="https://dribbble.com/SiinamTechStudio" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on Dribbble">
+          <i class="fa-brands fa-dribbble" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.behance.net/Herman_Gathege" target="_blank" rel="noopener" class="social-link"
+          aria-label="Herman Remington on Behance">
+          <i class="fa-brands fa-behance" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="site-footer__meta">
+        <p class="copyright-text">@2026 Webloom Tech Kenya. All rights reserved.</p>
+        <p class="policy-text">
+          <a href="#" class="policy-link">Privacy policy</a>
+          <span class="separator" aria-hidden="true">·</span>
+          <a href="#" class="policy-link">Refund policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Linking custom script -->
   <script src="script.js"></script>
-  <script>
-    const container = document.querySelector(".shooting-stars-container");
-
-    function createShootingStar() {
-      const star = document.createElement("div");
-      star.classList.add("shooting-star");
-
-      // Randomize position, delay, and size
-      star.style.left = Math.random() * 100 + "vw";
-      star.style.top = Math.random() * 100 + "vh";
-      star.style.animationDuration = (Math.random() * 1 + 1.5) + "s";
-      star.style.opacity = Math.random() * 0.8 + 0.2;
-
-      container.appendChild(star);
-
-      // Remove after animation ends
-      setTimeout(() => {
-        star.remove();
-      }, 3000);
-    }
-
-    // Create multiple stars at random intervals
-    function generateStarsRandomly() {
-      createShootingStar();
-      setTimeout(generateStarsRandomly, Math.random() * 2000 + 1000); // 1s to 3s
-    }
-
-    generateStarsRandomly();
-  </script>
-
-  <script>
-    const starsWrapper = document.querySelector('.stars-wrapper');
-
-    for (let i = 0; i < 100; i++) {
-      const star = document.createElement('div');
-      star.classList.add('star');
-      star.style.top = Math.random() * 100 + 'vh';
-      star.style.left = Math.random() * 100 + 'vw';
-      star.style.animationDuration = (Math.random() * 2 + 2) + 's';
-      starsWrapper.appendChild(star);
-    }
-  </script>
-
 </body>
 
 </html>
